@@ -1,4 +1,4 @@
-# Chat with Cloud Haskell
+# Chat utilizando Cloud Haskell
 
 Uma implementação de um chat, utilizando a biblioteca do cloud haskell.
 
