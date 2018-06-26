@@ -46,6 +46,12 @@ data SignUpMessage = SignUpMessage {
 	clientName :: NickName
   } deriving (Generic, Typeable, Show)
 
+data LoggedMessage = LoggedMessage {
+  from :: NickName
+  } deriving (Generic, Typeable, Show)
+
 instance Binary JoinChatMessage
 
 instance Binary SignUpMessage
+
+instance Binary LoggedMessage

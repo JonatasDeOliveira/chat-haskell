@@ -81,15 +81,25 @@ joinChatHandler = handler
           broadcastMessage clients $ ChatMessage Server clientName msg
           continue (logClients,clients,conections'')
         (Just False) -> do
-          let msg = "error2"
+          let msg = "$error2$"
           logStr msg
           broadcastMessage clients $ ChatMessage Server clientName msg
           continue (logClients,clients,conections)
         Nothing -> do
-          let msg = "error1"
+          let msg = "$error1$"
           logStr msg
           broadcastMessage clients $ ChatMessage Server clientName msg
           continue (logClients,clients,conections)
+
+
+loggedHandler :: CastHandler (ClientLogMap,ClientPortMap,Conections) LoggedMessage
+loggedHandler = handler
+  where
+    handler :: ActionHandler (ClientLogMap,ClientPortMap,Conections) LoggedMessage
+    handler (logClients,clients,conections) LoggedMessage{..} = do
+      let msg = onlineUsersMessage logClients from
+      broadcastMessage clients $ ChatMessage Server from msg
+      continue (logClients,clients,conections)
           
 
 signUpHandler :: ChannelHandler (ClientLogMap,ClientPortMap,Conections) SignUpMessage ChatMessage
@@ -128,7 +138,7 @@ disconnectHandler (logClients,clients,conections) (PortMonitorNotification _ spI
           clientNameDest = fromMaybe "" (M.lookup clientName conections)
           conections' = M.delete clientName conections
           conections'' = M.delete clientNameDest conections'
-          msg = "error3"
+          msg = "$error3$"++clientName++"$" 
       broadcastMessage clients $ ChatMessage Server clientNameDest msg
       logStr (clientName ++ " deslogou ...")
       continue (logClients',clients,conections'')
@@ -139,8 +149,24 @@ launchChatServer =
           apiHandlers =  [ handleCast joinChatHandler
                          , handleRpcChan signUpHandler
                          , handleCast messageHandler
+                         , handleCast loggedHandler
                          ]
         , infoHandlers = [ handleInfo disconnectHandler ]
         , unhandledMessagePolicy = Log
         }
   in spawnLocal $ serve () (const (return $ InitOk (M.empty,M.empty,M.empty) Infinity)) server
+
+
+onlineUsersMessage :: ClientLogMap -> String -> String
+onlineUsersMessage logClients from = let users = (filter (\v -> v/=from) (M.keys logClients)) 
+                                     in 
+                                      if (length users) == 0
+                                        then "Não há outros usuários no sistema ..."
+                                        else helperLogUsers users logClients ""
+
+helperLogUsers :: [NickName] -> ClientLogMap -> String -> String
+helperLogUsers [] _ s = s
+helperLogUsers (x:xs) logClients s = case (M.lookup x logClients) of
+                            (Just True) -> helperLogUsers xs logClients (s ++ x ++ " -> on\n")
+                            _ -> helperLogUsers xs logClients (s ++ x ++ " -> off\n")
+
