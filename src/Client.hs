@@ -1,11 +1,12 @@
 module Client where
 
-import Control.Distributed.Process.ManagedProcess.Client (callChan, cast)
+import Control.Distributed.Process.ManagedProcess.Client (callChan, cast, shutdown)
 import Control.Distributed.Process ( expectTimeout
                                    , whereisRemoteAsync
                                    , spawnLocal
                                    , receiveChan
                                    , link
+                                   , kill
                                    , NodeId(..)
                                    , Process
                                    , ProcessId
@@ -53,15 +54,32 @@ launchChatClient serverAddr clientHost port name  = do
         rp <- callChan serverPid (SignUpMessage nickName) :: Process (ReceivePort ChatMessage)
         (ChatMessage from dest msg) <- receiveChan rp
         logStr msg
-        nickNameDest <- getDestClientLoop serverPid nickName rp
-        void $ spawnLocal $ forever $ do
-            msg <- receiveChan rp
-            logChatMessage msg
-        forever $ do
+        connectionLoop serverPid nickName rp
+
+        return ()
+
+connectionLoop :: ProcessId -> NickName -> ReceivePort ChatMessage -> Process ()
+connectionLoop serverPid nickName rp = do
+  nickNameDest <- getDestClientLoop serverPid nickName rp
+  pid1 <- spawnLocal $ forever $ do
             chatInput <- liftIO getLine
             cast serverPid (ChatMessage (Client nickName) nickNameDest chatInput)
-            liftIO $ threadDelay 500000
-        
+            --liftIO $ threadDelay 50000
+  listening rp pid1
+  connectionLoop serverPid nickName rp
+
+listening :: ReceivePort ChatMessage -> ProcessId -> Process ()
+listening rp pid1 = do
+  c@(ChatMessage from dest msg) <- receiveChan rp
+  if msg == "error3"
+    then do
+      kill pid1 ""
+      logStr ("O usuário " ++ dest ++ " deslogou do chat ...")
+      return ()
+    else do 
+      logChatMessage c
+      listening rp pid1
+
 getDestClientLoop :: ProcessId -> NickName -> ReceivePort ChatMessage -> Process String
 getDestClientLoop serverPid nickName rp = do
   logStr "Digite o nome do usuário com quem quer conversar"

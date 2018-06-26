@@ -97,8 +97,7 @@ signUpHandler sendPort = handler
   where
     handler :: ActionHandler (ClientLogMap,ClientPortMap,Conections) SignUpMessage
     handler (logClients,clients,conections) SignUpMessage{..} =
-      let currSendPort = (fromMaybe sendPort (M.lookup clientName clients))
-      in if not $ clientName `M.member` clients
+      if not $ clientName `M.member` clients
         then do
           void $ monitorPort sendPort
           let clients' = M.insert clientName sendPort clients
@@ -108,12 +107,13 @@ signUpHandler sendPort = handler
           broadcastMessage clients' $ ChatMessage Server clientName msg
           continue (logClients',clients', conections)
         else do
-          void $ monitorPort currSendPort
+          void $ monitorPort sendPort
           logStr (clientName ++ " reconectou ...")
           let msg = "Bem vindo de volta " ++ clientName
+              clients' = M.insert clientName sendPort clients
               logClients' = M.insert clientName True logClients
-          broadcastMessage clients $ ChatMessage Server clientName msg
-          continue (logClients',clients,conections)
+          broadcastMessage clients' $ ChatMessage Server clientName msg
+          continue (logClients',clients',conections)
 
 disconnectHandler :: ActionHandler (ClientLogMap,ClientPortMap,Conections) PortMonitorNotification
 disconnectHandler (logClients,clients,conections) (PortMonitorNotification _ spId reason) = do
@@ -128,8 +128,10 @@ disconnectHandler (logClients,clients,conections) (PortMonitorNotification _ spI
           clientNameDest = fromMaybe "" (M.lookup clientName conections)
           conections' = M.delete clientName conections
           conections'' = M.delete clientNameDest conections'
+          msg = "error3"
+      broadcastMessage clients $ ChatMessage Server clientNameDest msg
       logStr (clientName ++ " deslogou ...")
-      continue (logClients,clients,conections'')
+      continue (logClients',clients,conections'')
 
 launchChatServer :: Process ProcessId
 launchChatServer =
