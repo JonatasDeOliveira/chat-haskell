@@ -1,3 +1,7 @@
+# Projeto da Disciplina de Programação Funcional (IF708)
+
+Alunos: Jônatas de Oliveira Clementino e Valdemiro Rosa Vieira Santos
+
 # Chat utilizando Cloud Haskell
 
 Uma implementação de um chat, utilizando a biblioteca do cloud haskell.
