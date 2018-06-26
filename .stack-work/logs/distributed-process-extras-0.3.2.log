@@ -1,0 +1,23 @@
+Configuring distributed-process-extras-0.3.2...
+Building distributed-process-extras-0.3.2...
+Preprocessing library distributed-process-extras-0.3.2...
+[ 1 of 14] Compiling Control.Distributed.Process.Extras.Internal.Unsafe ( src\Control\Distributed\Process\Extras\Internal\Unsafe.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras\Internal\Unsafe.o )
+[ 2 of 14] Compiling Control.Distributed.Process.Extras.Internal.Types ( src\Control\Distributed\Process\Extras\Internal\Types.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras\Internal\Types.o )
+[ 3 of 14] Compiling Control.Distributed.Process.Extras.Time ( src\Control\Distributed\Process\Extras\Time.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras\Time.o )
+[ 4 of 14] Compiling Control.Distributed.Process.Extras.UnsafePrimitives ( src\Control\Distributed\Process\Extras\UnsafePrimitives.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras\UnsafePrimitives.o )
+[ 5 of 14] Compiling Control.Distributed.Process.Extras.Timer ( src\Control\Distributed\Process\Extras\Timer.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras\Timer.o )
+[ 6 of 14] Compiling Control.Distributed.Process.Extras.Internal.Queue.SeqQ ( src\Control\Distributed\Process\Extras\Internal\Queue\SeqQ.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras\Internal\Queue\SeqQ.o )
+[ 7 of 14] Compiling Control.Distributed.Process.Extras.Internal.Queue.PriorityQ ( src\Control\Distributed\Process\Extras\Internal\Queue\PriorityQ.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras\Internal\Queue\PriorityQ.o )
+[ 8 of 14] Compiling Control.Distributed.Process.Extras.Internal.Primitives ( src\Control\Distributed\Process\Extras\Internal\Primitives.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras\Internal\Primitives.o )
+
+src\Control\Distributed\Process\Extras\Internal\Primitives.hs:212:3: warning: [-Wunused-top-binds]
+    Defined but not used: `registerSelf__tdict'
+[ 9 of 14] Compiling Control.Distributed.Process.Extras.Internal.Containers.MultiMap ( src\Control\Distributed\Process\Extras\Internal\Containers\MultiMap.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras\Internal\Containers\MultiMap.o )
+[10 of 14] Compiling Control.Distributed.Process.Extras ( src\Control\Distributed\Process\Extras.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras.o )
+[11 of 14] Compiling Control.Distributed.Process.Extras.Call ( src\Control\Distributed\Process\Extras\Call.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras\Call.o )
+[12 of 14] Compiling Control.Distributed.Process.Extras.Monitoring ( src\Control\Distributed\Process\Extras\Monitoring.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras\Monitoring.o )
+[13 of 14] Compiling Control.Distributed.Process.Extras.SystemLog ( src\Control\Distributed\Process\Extras\SystemLog.hs, .stack-work\dist\ca59d0ab\build\Control\Distributed\Process\Extras\SystemLog.o )
+[14 of 14] Compiling Control.Concurrent.Utils ( src\Control\Concurrent\Utils.hs, .stack-work\dist\ca59d0ab\build\Control\Concurrent\Utils.o )
+Installing library in C:\Users\jonat\Desktop\Nova
+pasta\chat-haskell\.stack-work\install\fab39206\lib\x86_64-windows-ghc-8.0.2\distributed-process-extras-0.3.2-5jNxThiGiIV2xcFzHHpfhd
+Registering distributed-process-extras-0.3.2...

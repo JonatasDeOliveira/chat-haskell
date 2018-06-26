@@ -1,0 +1,580 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-26 22:34:00.2775175 UTC
+
+interface chatServer-0.1.0.0-F55iXHiCgeG4OgnGdEtvot:Logger 8002
+  interface hash: dcf828c7f21cc9587ce9e441d8386047
+  ABI hash: 1160a496971011cf5e0fe495e4cf7b95
+  export-list hash: 85a5095853829412ad314f4bace828e9
+  orphan hash: b31ad45d214b63b1a2acf32f3828ec40
+  flag hash: 653154f6af09d067d4a62bca73f78dd5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Logger.chatLogger
+  Logger.chatMessageToStr
+  Logger.logChatMessage
+  Logger.logStr
+  Logger.runChatLogger
+module dependencies: Types
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-accessor-0.2.2.7@data-accessor-0.2.2.7-4qt9kbhlqc22eurok1PC3k
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa
+                      distributed-static-0.3.8@distributed-static-0.3.8-DaoqC21aiIYCl9NBEF0fXi
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      network-transport-0.4.4.0@network-transport-0.4.4.0-IJ9khvHtxql3hPMwfJGWeP
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      rank1dynamic-0.3.3.0@rank1dynamic-0.3.3.0-Dc2KQPZw4y91X07lv5KN1b
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Compose base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         chatServer-0.1.0.0-F55iXHiCgeG4OgnGdEtvot:Types
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Internal.Types
+                         distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Management.Internal.Table
+                         distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Management.Internal.Trace.Types
+                         distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Management.Internal.Types
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         network-transport-0.4.4.0@network-transport-0.4.4.0-IJ9khvHtxql3hPMwfJGWeP:Network.Transport
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 3f1875e753ac8c44dae64dc062ea742e
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  Types f06c8d8c69f4f4ea2b51dcd8cd1e32d9
+  exports: bb85d6fb6d20de230af1ef54f44ba744
+  $sel:dest:ChatMessage 87d8763258c6e7e253f2f38a8e4da34d
+  $sel:from:ChatMessage 252318b507b18ccfcb18f2a14b6f5f57
+  $sel:message:ChatMessage a55a1f1b8dfc9c180997394a09b4fac7
+  ChatMessage 37b14f67e5f6d75b54d36a1d99dbf67d
+  ChatMessage cfa487eb0e901c598d56af52c7ee4918
+  Client 62d48d4dd0920c970e5dcd7531ac1b5c
+  Server 246045e2d8e100c4443607940372cbc1
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process c932636571ec33342af2e1df4f27088e
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Internal.Primitives fcbe19d77af63dafa6de86edf6e4932d
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Internal.Types d36df4a9581c0da86246d9071d2e06cb
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Node 6a43573c4e9977a09e852db08cf09b88
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+4b65242fbb8e02d232dc8fbb8ab77ee9
+  $s$fSerializablea ::
+    Control.Distributed.Process.Serializable.Serializable
+      [GHC.Types.Char]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [GHC.Types.Char]
+                  Logger.$s$fSerializablea9
+                  Logger.$s$fSerializablea1 -}
+d16e4c907bfb2085c69395429534ee4f
+  $s$fSerializablea1 ::
+    Data.Typeable.Internal.Typeable [GHC.Types.Char]
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Logger.$s$fSerializablea2
+                  `cast`
+                (Sym (Data.Typeable.Internal.N:Typeable[0]
+                          <*>_N <[GHC.Types.Char]>_N)) -}
+454878dda2e42683281c246bd43efc88
+  $s$fSerializablea10 ::
+    Control.Distributed.Process.Serializable.Serializable
+      Types.ChatMessage
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.ChatMessage
+                  Logger.$s$fSerializablea_$s$fSerializablea_$cp1Serializable
+                  Logger.$s$fSerializablea11 -}
+3a5dd9984c46054ba693117837bb61c8
+  $s$fSerializablea11 ::
+    Data.Typeable.Internal.Typeable Types.ChatMessage
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Logger.$s$fSerializablea12
+                  `cast`
+                (Sym (Data.Typeable.Internal.N:Typeable[0]
+                          <*>_N <Types.ChatMessage>_N)) -}
+0e15721ad440fd8efc6140285954967c
+  $s$fSerializablea12 ::
+    GHC.Prim.Proxy# Types.ChatMessage -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (wild :: GHC.Prim.Proxy# Types.ChatMessage) ->
+                 Logger.$s$fSerializablea13) -}
+3ddca082980c9bd5cf6ee8db2f5a5876
+  $s$fSerializablea13 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Logger.$s$fSerializablea14
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   Types.$tcChatMessage
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+613a5f2a4964c43b7e44c94d0a4f8bfd
+  $s$fSerializablea14 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   7902587973804741676##
+                   9888786074953052317##) -}
+8ca10d9b24860b62004b29c4c1cf001b
+  $s$fSerializablea2 ::
+    GHC.Prim.Proxy# [GHC.Types.Char] -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (wild :: GHC.Prim.Proxy# [GHC.Types.Char]) ->
+                 Logger.$s$fSerializablea3) -}
+9edd2cd096554379905f1b55407ac655
+  $s$fSerializablea3 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Logger.$s$fSerializablea7 of wild { Data.Typeable.Internal.TypeRep dt dt1 tc ks trs ->
+                 let {
+                   types :: [Data.Typeable.Internal.TypeRep]
+                   = GHC.Base.++
+                       @ Data.Typeable.Internal.TypeRep
+                       trs
+                       Logger.$s$fSerializablea4
+                 } in
+                 case Data.Typeable.Internal.typeRepFingerprints
+                        ks
+                        types of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           (Data.Typeable.Internal.tyConFingerprint tc)
+                           kt_fps) of dt2 { GHC.Fingerprint.Type.Fingerprint dt3 dt4 ->
+                 Data.Typeable.Internal.TypeRep dt3 dt4 tc ks types } } }) -}
+0c24520c96c4ff169e6a5db2bc974f09
+  $s$fSerializablea4 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   Logger.$s$fSerializablea5
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+14b652efa9518ae07d515ba4b79f96e0
+  $s$fSerializablea5 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Logger.$s$fSerializablea6
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   GHC.Types.$tcChar
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+84e7c835635d1df0a1a4f99801b0e212
+  $s$fSerializablea6 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   16781394633280494409##
+                   2520638044472077920##) -}
+c5eec6a065c6a9a90aaae3fe248e45fc
+  $s$fSerializablea7 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Logger.$s$fSerializablea8
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   GHC.Types.$tc[]
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+d36fed9050a2dcc5b6cab7789100a25d
+  $s$fSerializablea8 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   17730107610217102821##
+                   9866972337190828755##) -}
+30eaff4a0f3e8ac2ebf2b2fb4de445c9
+  $s$fSerializablea9 :: Data.Binary.Class.Binary [GHC.Types.Char]
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Data.Binary.Class.$fBinaryVersion_$s$fBinary[] -}
+30d368885e5fd1dbdb52361e92594d45
+  $s$fSerializablea_$s$fSerializablea_$cp1Serializable ::
+    Data.Binary.Class.Binary Types.ChatMessage
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Types.$fBinaryChatMessage -}
+c2472bf1fb000ecaa5b5a101b274ae38
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Logger.$trModule2
+                   Logger.$trModule1) -}
+19bdbc41b825041ab32bb413dbe4602d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Logger"#) -}
+517a280c5dee055abaf73c1782709754
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "chatServer-0.1.0.0-F55iXHiCgeG4OgnGdEtvot"#) -}
+49381371d5c4751571dcb76da7d04bfc
+  $wchatMessageToStr ::
+    Types.Sender -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: Types.Sender) (ww1 :: GHC.Base.String) ->
+                 case ww of wild {
+                   Types.Server -> ww1
+                   Types.Client sender
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        sender
+                        (GHC.CString.unpackAppendCString# ": "# ww1) }) -}
+52bd9e9a31604b5ac24bb6ab9380b920
+  $wrunChatLogger ::
+    Control.Distributed.Process.Internal.Types.NodeId
+    -> Network.Transport.EndPoint
+    -> GHC.Prim.MVar#
+         GHC.Prim.RealWorld
+         Control.Distributed.Process.Internal.Types.LocalNodeState
+    -> GHC.Prim.MVar#
+         GHC.Prim.RealWorld
+         (Control.Concurrent.Chan.Stream
+            Control.Distributed.Process.Internal.Types.NCMsg)
+    -> GHC.Prim.MVar#
+         GHC.Prim.RealWorld
+         (Control.Concurrent.Chan.Stream
+            Control.Distributed.Process.Internal.Types.NCMsg)
+    -> Control.Distributed.Process.Internal.Types.MxEventBus
+    -> Control.Distributed.Static.RemoteTable
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 8, Strictness: <S,U><S,U><S,U><S,U><S,U><S,U><S,U><S,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Control.Distributed.Process.Internal.Types.NodeId)
+                   (ww1 :: Network.Transport.EndPoint)
+                   (ww2 :: GHC.Prim.MVar#
+                             GHC.Prim.RealWorld
+                             Control.Distributed.Process.Internal.Types.LocalNodeState)
+                   (ww3 :: GHC.Prim.MVar#
+                             GHC.Prim.RealWorld
+                             (Control.Concurrent.Chan.Stream
+                                Control.Distributed.Process.Internal.Types.NCMsg))
+                   (ww4 :: GHC.Prim.MVar#
+                             GHC.Prim.RealWorld
+                             (Control.Concurrent.Chan.Stream
+                                Control.Distributed.Process.Internal.Types.NCMsg))
+                   (ww5 :: Control.Distributed.Process.Internal.Types.MxEventBus)
+                   (ww6 :: Control.Distributed.Static.RemoteTable)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Control.Distributed.Process.Node.$wforkProcess
+                        ww
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        ww6
+                        Logger.chatLogger1
+                          `cast`
+                        (Trans
+                             (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                            <GHC.Types.IO>_R
+                                            <()>_N))
+                                  (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <()>_N)))
+                        w of ds1 { (#,#) ipv ipv1 ->
+                 Control.Distributed.Process.Node.$wrunProcess
+                   ww
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   (Control.Distributed.Process.Internal.Primitives.register1
+                      Logger.logChatMessage2
+                      ipv1)
+                     `cast`
+                   (Trans
+                        (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        (Trans
+                             (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                       <*>_N
+                                       <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                       <GHC.Types.IO>_R
+                                       <()>_N))
+                             (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <()>_N)))
+                   ipv }) -}
+eeb98e2d7eb010f0ccc0b497aafb67fc
+  chatLogger :: Control.Distributed.Process.Internal.Types.Process ()
+  {- Arity: 2,
+     Strictness: <S(SLSLLS),1*U(U(U(U),U(U,U),U(U)),U,U,U,U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Logger.chatLogger1
+                  `cast`
+                (Trans
+                     (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                      ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                     (Trans
+                          (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                    <*>_N
+                                    <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                    <GHC.Types.IO>_R
+                                    <()>_N))
+                          (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <()>_N))) -}
+4070bbdb3ccdc8beee10d8c022bf5239
+  chatLogger1 ::
+    Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2,
+     Strictness: <S(SLSLLS),1*U(U(U(U),U(U,U),U(U)),U,U,U,U,U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Control.Distributed.Process.Internal.Types.LocalProcess)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { Control.Distributed.Process.Internal.Types.LocalProcess ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case ww1 of ww7 { Control.Distributed.Process.Internal.CQueue.CQueue ww8 ww9 ww10 ->
+                 case Control.Distributed.Process.Internal.CQueue.$wdequeue
+                        @ Control.Distributed.Process.Internal.Types.Message
+                        @ (Control.Distributed.Process.Internal.Types.Process ())
+                        ww8
+                        ww9
+                        ww10
+                        Control.Distributed.Process.Internal.CQueue.Blocking
+                        Logger.chatLogger2
+                          `cast`
+                        ([Control.Distributed.Process.Internal.Primitives.N:Match[0]
+                              <()>_N])_R
+                        w1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild {
+                   GHC.Base.Nothing
+                   -> GHC.IO.failIO1
+                        @ ()
+                        Control.Distributed.Process.Internal.Primitives.expect4
+                        ipv
+                   GHC.Base.Just proc
+                   -> (proc
+                         `cast`
+                       (Trans
+                            (Control.Distributed.Process.Internal.Types.N:Process[0] <()>_N)
+                            (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                 <*>_N
+                                 <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                 <GHC.Types.IO>_R
+                                 <()>_N))
+                         (Control.Distributed.Process.Internal.Types.LocalProcess
+                            (Control.Distributed.Process.Internal.CQueue.CQueue
+                               @ Control.Distributed.Process.Internal.Types.Message
+                               ww8
+                               ww9
+                               ww10)
+                            ww2
+                            ww3
+                            ww4
+                            ww5
+                            ww6))
+                        `cast`
+                      (GHC.Types.N:IO[0] <()>_R)
+                        ipv } } } }) -}
+94f23201dedc99dd4df48c0ee3aa28d1
+  chatLogger2 ::
+    [Control.Distributed.Process.Internal.Primitives.Match ()]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Control.Distributed.Process.Internal.Primitives.Match ())
+                   Logger.chatLogger5
+                   Logger.chatLogger3) -}
+620d35ff23a9f622246037f074feebe2
+  chatLogger3 ::
+    [Control.Distributed.Process.Internal.Primitives.Match ()]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Control.Distributed.Process.Internal.Primitives.Match ())
+                   Logger.chatLogger4
+                   (GHC.Types.[]
+                      @ (Control.Distributed.Process.Internal.Primitives.Match ()))) -}
+3263f6af1b28cf0ea806b4f683833cc7
+  chatLogger4 ::
+    Control.Distributed.Process.Internal.Primitives.Match ()
+e1d16344bf0d15ebb15e0dc93689d3b0
+  chatLogger5 ::
+    Control.Distributed.Process.Internal.Primitives.Match ()
+5cdd3a7154388775a071932bbaf27e39
+  chatMessageToStr :: Types.ChatMessage -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Types.ChatMessage) ->
+                 case w of ww { Types.ChatMessage ww1 ww2 ww3 ->
+                 Logger.$wchatMessageToStr ww1 ww3 }) -}
+a555f92d7a9ed2f6b9535907bd5270cf
+  logChatMessage ::
+    Types.ChatMessage
+    -> Control.Distributed.Process.Internal.Types.Process ()
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Logger.logChatMessage1
+                  `cast`
+                (<Types.ChatMessage>_R
+                 ->_R Trans
+                          (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                         <GHC.Types.IO>_R
+                                         <()>_N))
+                               (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <()>_N))) -}
+9e8b92452d5754cc9c9ecca8f87ef761
+  logChatMessage1 ::
+    Types.ChatMessage
+    -> Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Control.Distributed.Process.Internal.Primitives.nsend2
+                   @ Types.ChatMessage
+                   Logger.$s$fSerializablea10
+                   Logger.logChatMessage2) -}
+ea231cc7cc79b18da0a12a3a56d9c56b
+  logChatMessage2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "chatLogger"#) -}
+9823354060ee316223292ba186517572
+  logStr ::
+    GHC.Base.String
+    -> Control.Distributed.Process.Internal.Types.Process ()
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                Logger.logStr1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Trans
+                          (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                         <GHC.Types.IO>_R
+                                         <()>_N))
+                               (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <()>_N))) -}
+b41eef0d2821912ad2761a79167243bb
+  logStr1 ::
+    GHC.Base.String
+    -> Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (Control.Distributed.Process.Internal.Primitives.nsend2
+                   @ GHC.Base.String
+                   Logger.$s$fSerializablea
+                   Logger.logChatMessage2) -}
+407c4c4682fbbfe60a763cdd5eb2011d
+  runChatLogger ::
+    Control.Distributed.Process.Internal.Types.LocalNode
+    -> GHC.Types.IO ()
+  {- Arity: 2,
+     Strictness: <S(SSSS(SS)SS),1*U(U,U,U,U(U,U),U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Logger.runChatLogger1
+                  `cast`
+                (<Control.Distributed.Process.Internal.Types.LocalNode>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+89bc72b61a6e62f4cf9aa4d5c5301bdc
+  runChatLogger1 ::
+    Control.Distributed.Process.Internal.Types.LocalNode
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2,
+     Strictness: <S(SSSS(SS)SS),1*U(U,U,U,U(U,U),U,U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Control.Distributed.Process.Internal.Types.LocalNode)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { Control.Distributed.Process.Internal.Types.LocalNode ww1 ww2 ww3 ww4 ww5 ww6 ->
+                 case ww4 of ww7 { Control.Concurrent.Chan.Chan ww8 ww9 ->
+                 Logger.$wrunChatLogger ww1 ww2 ww3 ww8 ww9 ww5 ww6 w1 } }) -}
+"SPEC/Logger $fSerializablea @ ChatMessage" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                             Types.ChatMessage)
+                                                            ($dBinary :: Data.Binary.Class.Binary
+                                                                           Types.ChatMessage)
+  Control.Distributed.Process.Serializable.$fSerializablea @ Types.ChatMessage
+                                                           $dBinary
+                                                           $dTypeable
+  = Logger.$s$fSerializablea10
+"SPEC/Logger $fSerializablea @ [Char]" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                        [GHC.Types.Char])
+                                                       ($dBinary :: Data.Binary.Class.Binary
+                                                                      [GHC.Types.Char])
+  Control.Distributed.Process.Serializable.$fSerializablea @ [GHC.Types.Char]
+                                                           $dBinary
+                                                           $dTypeable
+  = Logger.$s$fSerializablea
+"SPEC/Logger $fSerializablea_$cp1Serializable @ ChatMessage" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                                              Types.ChatMessage)
+                                                                             ($dBinary :: Data.Binary.Class.Binary
+                                                                                            Types.ChatMessage)
+  Control.Distributed.Process.Serializable.$fSerializablea_$cp1Serializable @ Types.ChatMessage
+                                                                            $dBinary
+                                                                            $dTypeable
+  = Logger.$s$fSerializablea_$s$fSerializablea_$cp1Serializable
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

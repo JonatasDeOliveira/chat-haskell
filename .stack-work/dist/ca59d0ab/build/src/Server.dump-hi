@@ -1,0 +1,1945 @@
+
+==================== FINAL INTERFACE ====================
+2018-06-26 22:34:00.8132072 UTC
+
+interface chatServer-0.1.0.0-F55iXHiCgeG4OgnGdEtvot:Server 8002
+  interface hash: 16e18d90a82a485e36d723a62e945a16
+  ABI hash: c342ee93a57a7e9b51e7af9bcba0feb4
+  export-list hash: 3089dabed5ff355a9cabbbf4be25b50f
+  orphan hash: 6cf21c1e8e70e6f839709efdedb69325
+  flag hash: 653154f6af09d067d4a62bca73f78dd5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Server.broadcastMessage
+  Server.disconnectHandler
+  Server.filtering
+  Server.helperLogUsers
+  Server.joinChatHandler
+  Server.launchChatServer
+  Server.loggedHandler
+  Server.messageHandler
+  Server.onlineUsersMessage
+  Server.serveChatRoom
+  Server.signUpHandler
+module dependencies: Logger Types
+package dependencies: Win32-2.3.1.1@Win32-2.3.1.1
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-accessor-0.2.2.7@data-accessor-0.2.2.7-4qt9kbhlqc22eurok1PC3k
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa
+                      distributed-process-async-0.2.4.1@distributed-process-async-0.2.4.1-B5HdIHTPLzZDVPHMZm56vx
+                      distributed-process-client-server-0.2.3@distributed-process-client-server-0.2.3-8kxGpVvO3U0Il499I2gK12
+                      distributed-process-extras-0.3.2@distributed-process-extras-0.3.2-5jNxThiGiIV2xcFzHHpfhd
+                      distributed-static-0.3.8@distributed-static-0.3.8-DaoqC21aiIYCl9NBEF0fXi
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      fingertree-0.1.3.0@fingertree-0.1.3.0-21niuAX98Ih92jny8ofldV
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk
+                      network-transport-0.4.4.0@network-transport-0.4.4.0-IJ9khvHtxql3hPMwfJGWeP
+                      network-transport-tcp-0.5.1@network-transport-tcp-0.5.1-KxA3ZXM3OkH9TM1p5uD4a1
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      random-1.1@random-1.1-9tceXaeYIMZ4JrKq20Egog
+                      rank1dynamic-0.3.3.0@rank1dynamic-0.3.3.0-Dc2KQPZw4y91X07lv5KN1b
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      syb-0.6@syb-0.6-IcoSwlPi2Nx4zSqMmorFPS template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      time-1.6.0.1@time-1.6.0.1 transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         hashable-1.2.6.1@hashable-1.2.6.1-2ZLNuHq395GGIHwEHuqZol:Data.Hashable.Generic
+         network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network.Socket
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         syb-0.6@syb-0.6-IcoSwlPi2Nx4zSqMmorFPS:Data.Generics.Instances
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Calendar.Gregorian
+         time-1.6.0.1@time-1.6.0.1:Data.Time.Format.Parse
+         time-1.6.0.1@time-1.6.0.1:Data.Time.LocalTime.LocalTime
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Compose base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.Functor.Product base-4.9.1.0:Data.Functor.Sum
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         chatServer-0.1.0.0-F55iXHiCgeG4OgnGdEtvot:Types
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Internal.Types
+                         distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Management.Internal.Table
+                         distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Management.Internal.Trace.Types
+                         distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Management.Internal.Types
+                         distributed-process-async-0.2.4.1@distributed-process-async-0.2.4.1-B5HdIHTPLzZDVPHMZm56vx:Control.Distributed.Process.Async.Internal.Types
+                         distributed-process-client-server-0.2.3@distributed-process-client-server-0.2.3-8kxGpVvO3U0Il499I2gK12:Control.Distributed.Process.ManagedProcess.Internal.Types
+                         distributed-process-client-server-0.2.3@distributed-process-client-server-0.2.3-8kxGpVvO3U0Il499I2gK12:Control.Distributed.Process.ManagedProcess.Timer
+                         distributed-process-extras-0.3.2@distributed-process-extras-0.3.2-5jNxThiGiIV2xcFzHHpfhd:Control.Distributed.Process.Extras.Internal.Types
+                         distributed-process-extras-0.3.2@distributed-process-extras-0.3.2-5jNxThiGiIV2xcFzHHpfhd:Control.Distributed.Process.Extras.SystemLog
+                         distributed-process-extras-0.3.2@distributed-process-extras-0.3.2-5jNxThiGiIV2xcFzHHpfhd:Control.Distributed.Process.Extras.Time
+                         distributed-process-extras-0.3.2@distributed-process-extras-0.3.2-5jNxThiGiIV2xcFzHHpfhd:Control.Distributed.Process.Extras.Timer
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         network-transport-0.4.4.0@network-transport-0.4.4.0-IJ9khvHtxql3hPMwfJGWeP:Network.Transport
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+import  -/  base-4.9.1.0:Control.Concurrent e3f6962e2eee72e46a7f524818b5ed3e
+import  -/  base-4.9.1.0:Control.Monad f915f187cea611986ebb12dbc69279ab
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 3f1875e753ac8c44dae64dc062ea742e
+import  -/  base-4.9.1.0:Data.Either 186ef9adf6b47e24f39efe9b2e18e352
+import  -/  base-4.9.1.0:Data.Foldable 254e836c2d813d34e47feb29bb8d40ed
+import  -/  base-4.9.1.0:Data.Functor 682cc832c233b71cec70179490a08631
+import  -/  base-4.9.1.0:Data.Maybe ecf0c6f81372d9b58b142d5e758ea51b
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Conc.IO 130e001b62dcd16f34734f77c1912479
+import  -/  base-4.9.1.0:GHC.List d11eb227c1c6fbfd89bb781d72eaea0d
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  base-4.9.1.0:System.IO 5daf3f384209c11d9566e3409af8ec5d
+import  -/  Logger 1160a496971011cf5e0fe495e4cf7b95
+  exports: 85a5095853829412ad314f4bace828e9
+  logStr 9823354060ee316223292ba186517572
+  runChatLogger 407c4c4682fbbfe60a763cdd5eb2011d
+import  -/  Types f06c8d8c69f4f4ea2b51dcd8cd1e32d9
+  exports: bb85d6fb6d20de230af1ef54f44ba744
+  $sel:clientName:JoinChatMessage 520eeed4ff3b6149e8b5037dfc0c4421
+  $sel:clientName:SignUpMessage 6d77bb3ba1b1bf9d4258212640125caa
+  $sel:clientNameDest:JoinChatMessage 8fea598fa8c67ede069f1608ac177b4f
+  $sel:dest:ChatMessage 87d8763258c6e7e253f2f38a8e4da34d
+  $sel:from:ChatMessage 252318b507b18ccfcb18f2a14b6f5f57
+  $sel:from:LoggedMessage ee05469016b8a3efd0301d3d7cd7d25d
+  $sel:message:ChatMessage a55a1f1b8dfc9c180997394a09b4fac7
+  ChatMessage 37b14f67e5f6d75b54d36a1d99dbf67d
+  ChatMessage cfa487eb0e901c598d56af52c7ee4918
+  ChatName e66c6f6ddfda7c92cad8228fd97a49f6
+  ClientLogMap 149db3868f0019dcd8b15fed6b06cbd9
+  ClientPortMap 4cb4e13744de3bdc3e483e4f66569a1d
+  Conections b9b6a35d864104f20a6e74d800c7d50f
+  Host 57327f0d6cabab30391f7f6da78e64b8
+  JoinChatMessage bf94b2a5a52f2d14a27ab9216db5208e
+  JoinChatMessage e4b94ca510a35542f1fa784ab97ef915
+  LoggedMessage e2c15e151dd2b58305d8e48f8e39857c
+  LoggedMessage b8ce9dcf53cec401fc49655cc6f88512
+  NickName b1403a63be6fe3ac552b86fb78e9ba4c
+  Server 246045e2d8e100c4443607940372cbc1
+  SignUpMessage c8b1f50e5548106246bef2be73ab033e
+  SignUpMessage 425992dfe64822500882e5ba47943ce8
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 6c2364c30285a1caa610caab304974c4
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base dfcca0a6b3fe956067f7db6df4d400c2
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process c932636571ec33342af2e1df4f27088e
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Internal.Primitives fcbe19d77af63dafa6de86edf6e4932d
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Internal.Types d36df4a9581c0da86246d9071d2e06cb
+import  -/  distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mCpdnpSa:Control.Distributed.Process.Node 6a43573c4e9977a09e852db08cf09b88
+import  -/  distributed-process-client-server-0.2.3@distributed-process-client-server-0.2.3-8kxGpVvO3U0Il499I2gK12:Control.Distributed.Process.ManagedProcess 044105686ce21d5fd6ab5a2c12326622
+import  -/  distributed-process-client-server-0.2.3@distributed-process-client-server-0.2.3-8kxGpVvO3U0Il499I2gK12:Control.Distributed.Process.ManagedProcess.Internal.Types 536674cb0577b96efd533512d7da4cc0
+import  -/  distributed-process-client-server-0.2.3@distributed-process-client-server-0.2.3-8kxGpVvO3U0Il499I2gK12:Control.Distributed.Process.ManagedProcess.Server 3557b3173b2d84ed4a601ad1e2053645
+import  -/  distributed-process-extras-0.3.2@distributed-process-extras-0.3.2-5jNxThiGiIV2xcFzHHpfhd:Control.Distributed.Process.Extras.Time d74c0ac092da28cfe7894443ec3d9135
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  network-transport-tcp-0.5.1@network-transport-tcp-0.5.1-KxA3ZXM3OkH9TM1p5uD4a1:Network.Transport.TCP 1b44fe4e045760424eb6d98c99498d3e
+7ceaf0828e420f08dde08829012d2bee
+  $s$fSerializablea ::
+    Control.Distributed.Process.Serializable.Serializable
+      Types.LoggedMessage
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.LoggedMessage
+                  Server.$s$fSerializablea_$s$fSerializablea_$cp1Serializable
+                  Server.$s$fSerializablea_$dTypeable -}
+e8728dc8cf72b7ee91c72c4e1a87d8cb
+  $s$fSerializablea1 ::
+    GHC.Prim.Proxy# Types.LoggedMessage
+    -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (wild :: GHC.Prim.Proxy# Types.LoggedMessage) ->
+                 Server.$s$fSerializablea2) -}
+763893bb77703ec8c1eb0a96bc051f86
+  $s$fSerializablea10 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Server.$s$fSerializablea11
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   Types.$tcJoinChatMessage
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+dad33d6f5f59ae0d1565e3bc289762df
+  $s$fSerializablea11 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   10458976505951064228##
+                   1431254267078445191##) -}
+c6197e482c3e851d92f8926d809533b7
+  $s$fSerializablea12 ::
+    Control.Distributed.Process.Serializable.Serializable
+      Control.Distributed.Process.Internal.Types.PortMonitorNotification
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Control.Distributed.Process.Internal.Types.PortMonitorNotification
+                  Server.$s$fSerializablea_$s$fSerializablea_$cp1Serializable3
+                  Server.$s$fSerializablea_$dTypeable3 -}
+e98b90afb918f6a266e1d69c6efc92ec
+  $s$fSerializablea13 ::
+    GHC.Prim.Proxy#
+      Control.Distributed.Process.Internal.Types.PortMonitorNotification
+    -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (wild :: GHC.Prim.Proxy#
+                              Control.Distributed.Process.Internal.Types.PortMonitorNotification) ->
+                 Server.$s$fSerializablea14) -}
+7aacecada34575244efa6b085fd5d82e
+  $s$fSerializablea14 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Server.$s$fSerializablea15
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   Control.Distributed.Process.Internal.Types.$tcPortMonitorNotification
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+724f2d005f4667faf29eeddf339767e3
+  $s$fSerializablea15 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   7044798865711392814##
+                   13118547744079698626##) -}
+aa7782bb56680f764767ea9a69203b9d
+  $s$fSerializablea16 ::
+    Control.Distributed.Process.Serializable.Serializable
+      Types.ChatMessage
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.ChatMessage
+                  Server.$s$fSerializablea_$s$fSerializablea_$cp1Serializable4
+                  Server.$s$fSerializablea_$s$fSerializablea_$cp2Serializable -}
+e08200ea885a3b37fb883714bac5bc9d
+  $s$fSerializablea17 ::
+    GHC.Prim.Proxy# Types.ChatMessage -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (wild :: GHC.Prim.Proxy# Types.ChatMessage) ->
+                 Server.$s$fSerializablea18) -}
+f71232d4b7b6352580226444d65c8e5c
+  $s$fSerializablea18 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Server.$s$fSerializablea19
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   Types.$tcChatMessage
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+5a833697ecb51c0336efe4b73b2a619b
+  $s$fSerializablea19 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   7902587973804741676##
+                   9888786074953052317##) -}
+1da543ebc211334f4f4e142a8ef73587
+  $s$fSerializablea2 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Server.$s$fSerializablea3
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   Types.$tcLoggedMessage
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+465ccbefce6711d466eac2dc834acf51
+  $s$fSerializablea3 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   2301449492620446062##
+                   11563316715168022587##) -}
+b97e3dd9cf81c20fb920465453f81ecf
+  $s$fSerializablea4 ::
+    Control.Distributed.Process.Serializable.Serializable
+      Types.SignUpMessage
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.SignUpMessage
+                  Server.$s$fSerializablea_$s$fSerializablea_$cp1Serializable1
+                  Server.$s$fSerializablea_$dTypeable1 -}
+5bcbf393cfd5ef68be77ff778a8da965
+  $s$fSerializablea5 ::
+    GHC.Prim.Proxy# Types.SignUpMessage
+    -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (wild :: GHC.Prim.Proxy# Types.SignUpMessage) ->
+                 Server.$s$fSerializablea6) -}
+4ec8f293c60a869e759a05e094c988c8
+  $s$fSerializablea6 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case Data.Typeable.Internal.typeRepFingerprints
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        (GHC.Types.[]
+                           @ Data.Typeable.Internal.TypeRep) of kt_fps { DEFAULT ->
+                 case GHC.Fingerprint.fingerprintFingerprints
+                        (GHC.Types.:
+                           @ GHC.Fingerprint.Type.Fingerprint
+                           Server.$s$fSerializablea7
+                           kt_fps) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TypeRep
+                   dt1
+                   dt2
+                   Types.$tcSignUpMessage
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep) } }) -}
+4b0ea5007a29fb97977c9602287f6f6d
+  $s$fSerializablea7 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   4671961828375183416##
+                   5268003934234638688##) -}
+ae27856468b8a88874d037a364909f14
+  $s$fSerializablea8 ::
+    Control.Distributed.Process.Serializable.Serializable
+      Types.JoinChatMessage
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Types.JoinChatMessage
+                  Server.$s$fSerializablea_$s$fSerializablea_$cp1Serializable2
+                  Server.$s$fSerializablea_$dTypeable2 -}
+3b611e6823fb0673387fdcb0b7f1f892
+  $s$fSerializablea9 ::
+    GHC.Prim.Proxy# Types.JoinChatMessage
+    -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ (wild :: GHC.Prim.Proxy# Types.JoinChatMessage) ->
+                 Server.$s$fSerializablea10) -}
+84a01c69e534326c4d25d4d7690ffc72
+  $s$fSerializablea_$dTypeable ::
+    Data.Typeable.Internal.Typeable Types.LoggedMessage
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Server.$s$fSerializablea1
+                  `cast`
+                (Sym (Data.Typeable.Internal.N:Typeable[0]
+                          <*>_N <Types.LoggedMessage>_N)) -}
+a810f013cd2c99fb535d811fa219ffd5
+  $s$fSerializablea_$dTypeable1 ::
+    Data.Typeable.Internal.Typeable Types.SignUpMessage
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Server.$s$fSerializablea5
+                  `cast`
+                (Sym (Data.Typeable.Internal.N:Typeable[0]
+                          <*>_N <Types.SignUpMessage>_N)) -}
+42a3800b082071eb7d33bb653e38d13a
+  $s$fSerializablea_$dTypeable2 ::
+    Data.Typeable.Internal.Typeable Types.JoinChatMessage
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Server.$s$fSerializablea9
+                  `cast`
+                (Sym (Data.Typeable.Internal.N:Typeable[0]
+                          <*>_N <Types.JoinChatMessage>_N)) -}
+9b79d9a03797458550ce75c485b02fa9
+  $s$fSerializablea_$dTypeable3 ::
+    Data.Typeable.Internal.Typeable
+      Control.Distributed.Process.Internal.Types.PortMonitorNotification
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Server.$s$fSerializablea13
+                  `cast`
+                (Sym (Data.Typeable.Internal.N:Typeable[0]
+                          <*>_N
+                          <Control.Distributed.Process.Internal.Types.PortMonitorNotification>_N)) -}
+93926b7e305ec77b427cf037d9c74d9a
+  $s$fSerializablea_$s$fSerializablea_$cp1Serializable ::
+    Data.Binary.Class.Binary Types.LoggedMessage
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Types.$fBinaryLoggedMessage -}
+e0ac028ac6e8ef512715fb665fced91c
+  $s$fSerializablea_$s$fSerializablea_$cp1Serializable1 ::
+    Data.Binary.Class.Binary Types.SignUpMessage
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Types.$fBinarySignUpMessage -}
+44b4ac5708e9aee00434712b8b2deeb1
+  $s$fSerializablea_$s$fSerializablea_$cp1Serializable2 ::
+    Data.Binary.Class.Binary Types.JoinChatMessage
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Types.$fBinaryJoinChatMessage -}
+ef12a17667b72d56360dfe53cf099e49
+  $s$fSerializablea_$s$fSerializablea_$cp1Serializable3 ::
+    Data.Binary.Class.Binary
+      Control.Distributed.Process.Internal.Types.PortMonitorNotification
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                Control.Distributed.Process.Internal.Types.$fBinaryPortMonitorNotification -}
+edfcd35a4eeed16d94f998e3aafb1efe
+  $s$fSerializablea_$s$fSerializablea_$cp1Serializable4 ::
+    Data.Binary.Class.Binary Types.ChatMessage
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True) Types.$fBinaryChatMessage -}
+4b71934aba78c204ce97fddd23da2595
+  $s$fSerializablea_$s$fSerializablea_$cp2Serializable ::
+    Data.Typeable.Internal.Typeable Types.ChatMessage
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Server.$s$fSerializablea17
+                  `cast`
+                (Sym (Data.Typeable.Internal.N:Typeable[0]
+                          <*>_N <Types.ChatMessage>_N)) -}
+64f024581150c5583f4c13025890ff42
+  $sdelete_$sgo10 ::
+    [GHC.Types.Char]
+    -> Data.Map.Base.Map [GHC.Types.Char] a1
+    -> Data.Map.Base.Map [GHC.Types.Char] a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+34df99f5985acbbaddb419b9c6289b51
+  $sinsert_$sgo10 ::
+    Types.NickName
+    -> a1
+    -> Data.Map.Base.Map Types.NickName a1
+    -> Data.Map.Base.Map Types.NickName a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+1014bfab81f6953c5da5898fe762d634
+  $slookup1 ::
+    Types.NickName
+    -> Data.Map.Base.Map Types.NickName a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+e9fc160a6235ab77871f1227eb7df585
+  $smember1 ::
+    Types.NickName
+    -> Data.Map.Base.Map Types.NickName a -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+e32d8fb5f547929ec2493985914e2561
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Server.$trModule2
+                   Server.$trModule1) -}
+c9269bfe35d537ca98b982fdf2c044a9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Server"#) -}
+b233fd622e1892ddea4361fa91d6b047
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "chatServer-0.1.0.0-F55iXHiCgeG4OgnGdEtvot"#) -}
+0a9ffcd167778d45ab5aa570a05110a3
+  $wbroadcastMessage ::
+    Types.ClientPortMap
+    -> Types.Sender
+    -> Types.NickName
+    -> GHC.Base.String
+    -> Control.Distributed.Process.Internal.Types.Process ()
+  {- Arity: 4, Strictness: <S,1*U><L,U><L,U><L,U>, Inline: [0],
+     Unfolding: (\ (w :: Types.ClientPortMap)
+                   (ww :: Types.Sender)
+                   (ww1 :: Types.NickName)
+                   (ww2 :: GHC.Base.String) ->
+                 let {
+                   msg :: Types.ChatMessage = Types.ChatMessage ww ww1 ww2
+                 } in
+                 letrec {
+                   go10 :: Control.Distributed.Process.Internal.Types.Process ()
+                           -> Data.Map.Base.Map
+                                [GHC.Types.Char]
+                                (Control.Distributed.Process.Internal.Types.SendPort
+                                   Types.ChatMessage)
+                           -> Control.Distributed.Process.Internal.Types.Process ()
+                     {- Arity: 2, Strictness: <L,1*U><S,1*U> -}
+                   = \ (z' :: Control.Distributed.Process.Internal.Types.Process ())
+                       (ds :: Data.Map.Base.Map
+                                [GHC.Types.Char]
+                                (Control.Distributed.Process.Internal.Types.SendPort
+                                   Types.ChatMessage)) ->
+                     case ds of wild {
+                       Data.Map.Base.Bin dt ds1 x l r
+                       -> go10
+                            (let {
+                               eta :: Control.Distributed.Process.Internal.Types.Process ()
+                               = go10 z' r
+                             } in
+                             (\ (eta1 :: Control.Distributed.Process.Internal.Types.LocalProcess)
+                                (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case x `cast`
+                                   (Control.Distributed.Process.Internal.Types.N:SendPort[0]
+                                        <Types.ChatMessage>_P) of ww3 { Control.Distributed.Process.Internal.Types.SendPortId ww4 ww5 ww6 ww7 ->
+                              case ww4
+                                     `cast`
+                                   (Trans
+                                        (Control.Distributed.Process.Internal.Types.N:NodeId[0])
+                                        (Network.Transport.N:EndPointAddress[0])) of ww8 { Data.ByteString.Internal.PS ww9 ww10 ww11 ww12 ->
+                              case eta1 of ww13 { Control.Distributed.Process.Internal.Types.LocalProcess ww14 ww15 ww16 ww17 ww18 ww19 ->
+                              case ww19 of ww20 { Control.Distributed.Process.Internal.Types.LocalNode ww21 ww22 ww23 ww24 ww25 ww26 ->
+                              case ww21
+                                     `cast`
+                                   (Trans
+                                        (Control.Distributed.Process.Internal.Types.N:NodeId[0])
+                                        (Network.Transport.N:EndPointAddress[0])) of ww27 { Data.ByteString.Internal.PS ww28 ww29 ww30 ww31 ->
+                              case ww22 of ww32 { Network.Transport.EndPoint ww33 ww34 ww35 ww36 ww37 ww38 ->
+                              case ww24 of ww39 { Control.Concurrent.Chan.Chan ww40 ww41 ->
+                              case Control.Distributed.Process.Internal.Primitives.$wsendChan
+                                     @ Types.ChatMessage
+                                     Server.$s$fSerializablea16
+                                     ww9
+                                     ww10
+                                     ww11
+                                     ww12
+                                     ww5
+                                     ww6
+                                     ww7
+                                     msg
+                                     ww15
+                                     ww16
+                                     ww17
+                                     ww18
+                                     ww28
+                                     ww29
+                                     ww30
+                                     ww31
+                                     ww35
+                                     ww23
+                                     ww40
+                                     ww41
+                                     eta2 of ds2 { (#,#) ipv ipv1 ->
+                              (eta
+                                 `cast`
+                               (Trans
+                                    (Control.Distributed.Process.Internal.Types.N:Process[0] <()>_N)
+                                    (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                         <GHC.Types.IO>_R
+                                         <()>_N))
+                                 ww13)
+                                `cast`
+                              (GHC.Types.N:IO[0] <()>_R)
+                                ipv } } } } } } } })
+                               `cast`
+                             (Trans
+                                  (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                   ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                                  (Trans
+                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                 <*>_N
+                                                 <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                                 <GHC.Types.IO>_R
+                                                 <()>_N))
+                                       (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <()>_N))))
+                            l
+                       Data.Map.Base.Tip -> z' }
+                 } in
+                 go10
+                   Server.broadcastMessage1
+                     `cast`
+                   (Trans
+                        (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        (Trans
+                             (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                       <*>_N
+                                       <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                       <GHC.Types.IO>_R
+                                       <()>_N))
+                             (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <()>_N)))
+                   (Data.Map.Base.filterWithKey
+                      @ Types.NickName
+                      @ (Control.Distributed.Process.Internal.Types.SendPort
+                           Types.ChatMessage)
+                      (\ (x :: Types.NickName)
+                         (ds :: Control.Distributed.Process.Internal.Types.SendPort
+                                  Types.ChatMessage)[OneShot] ->
+                       GHC.Base.eqString x ww1)
+                      w)) -}
+1e66a4e89e33c526f698310a5dced91c
+  $wdisconnectHandler ::
+    Types.ClientLogMap
+    -> Types.ClientPortMap
+    -> Types.Conections
+    -> Control.Distributed.Process.Internal.Types.NodeId
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Action
+         (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+  {- Arity: 7,
+     Strictness: <L,U><S,U><L,U><L,U(U,U,U,U)><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: Types.ClientLogMap)
+                   (ww1 :: Types.ClientPortMap)
+                   (ww2 :: Types.Conections)
+                   (ww3 :: Control.Distributed.Process.Internal.Types.NodeId)
+                   (ww4 :: GHC.Prim.Int#)
+                   (ww5 :: GHC.Prim.Int#)
+                   (ww6 :: GHC.Prim.Int#) ->
+                 case Data.Map.Base.filterWithKey
+                        @ Types.NickName
+                        @ (Control.Distributed.Process.Internal.Types.SendPort
+                             Types.ChatMessage)
+                        (\ (ds :: Types.NickName)
+                           (x :: Control.Distributed.Process.Internal.Types.SendPort
+                                   Types.ChatMessage)[OneShot] ->
+                         case x `cast`
+                              (Control.Distributed.Process.Internal.Types.N:SendPort[0]
+                                   <Types.ChatMessage>_P) of ww7 { Control.Distributed.Process.Internal.Types.SendPortId ww8 ww9 ww10 ww11 ->
+                         case ww8
+                                `cast`
+                              (Trans
+                                   (Control.Distributed.Process.Internal.Types.N:NodeId[0])
+                                   (Network.Transport.N:EndPointAddress[0])) of ww12 { Data.ByteString.Internal.PS ww13 ww14 ww15 ww16 ->
+                         case ww3
+                                `cast`
+                              (Trans
+                                   (Control.Distributed.Process.Internal.Types.N:NodeId[0])
+                                   (Network.Transport.N:EndPointAddress[0])) of ww17 { Data.ByteString.Internal.PS ww18 ww19 ww20 ww21 ->
+                         Control.Distributed.Process.Internal.Types.$w$c==3
+                           ww13
+                           ww14
+                           ww15
+                           ww16
+                           ww9
+                           ww10
+                           ww11
+                           ww18
+                           ww19
+                           ww20
+                           ww21
+                           ww4
+                           ww5
+                           ww6 } } })
+                        ww1 of wild {
+                   Data.Map.Base.Bin dt ds1 ds2 ds3 ds4
+                   -> let {
+                        clientName :: Types.NickName
+                        = Server.disconnectHandler_go10
+                            (GHC.List.badHead @ [GHC.Types.Char])
+                            wild
+                      } in
+                      let {
+                        clientNameDest :: [GHC.Types.Char]
+                        = case Server.$slookup1
+                                 @ [GHC.Types.Char]
+                                 clientName
+                                 ww2 of wild1 {
+                            GHC.Base.Nothing -> GHC.Types.[] @ GHC.Types.Char
+                            GHC.Base.Just v -> v }
+                      } in
+                      let {
+                        m1 :: Control.Distributed.Process.Internal.Types.Process ()
+                        = Server.$wbroadcastMessage
+                            ww1
+                            Types.Server
+                            clientNameDest
+                            (GHC.CString.unpackAppendCString#
+                               "$error3$"#
+                               (GHC.Base.++
+                                  @ GHC.Types.Char
+                                  clientName
+                                  Server.disconnectHandler2))
+                      } in
+                      let {
+                        m2 :: Control.Distributed.Process.Internal.Types.LocalProcess
+                              -> GHC.Prim.State# GHC.Prim.RealWorld
+                              -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                        = Control.Distributed.Process.Internal.Primitives.nsend2
+                            @ GHC.Base.String
+                            Logger.$s$fSerializablea
+                            Logger.logChatMessage2
+                            (GHC.Base.++ @ GHC.Types.Char clientName Server.disconnectHandler1)
+                      } in
+                      let {
+                        x :: Data.Map.Base.Map Types.NickName GHC.Types.Bool
+                        = Server.$sinsert_$sgo10
+                            @ GHC.Types.Bool
+                            clientName
+                            GHC.Types.False
+                            ww
+                      } in
+                      let {
+                        x1 :: Data.Map.Base.Map [GHC.Types.Char] [GHC.Types.Char]
+                        = Server.$sdelete_$sgo10
+                            @ [GHC.Types.Char]
+                            clientNameDest
+                            (Server.$sdelete_$sgo10 @ [GHC.Types.Char] clientName ww2)
+                      } in
+                      let {
+                        x2 :: (Data.Map.Base.Map Types.NickName GHC.Types.Bool,
+                               Types.ClientPortMap,
+                               Data.Map.Base.Map [GHC.Types.Char] Types.NickName)
+                          {- Strictness: m -}
+                        = (x, ww1, x1)
+                      } in
+                      let {
+                        lvl10 :: Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                   (Data.Map.Base.Map Types.NickName GHC.Types.Bool,
+                                    Types.ClientPortMap,
+                                    Data.Map.Base.Map [GHC.Types.Char] Types.NickName)
+                        = Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessContinue
+                            @ (Data.Map.Base.Map Types.NickName GHC.Types.Bool,
+                               Types.ClientPortMap,
+                               Data.Map.Base.Map [GHC.Types.Char] Types.NickName)
+                            x2
+                      } in
+                      (\ (r1 :: Control.Distributed.Process.Internal.Types.LocalProcess)
+                         (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                       case (m1
+                               `cast`
+                             (Trans
+                                  (Control.Distributed.Process.Internal.Types.N:Process[0] <()>_N)
+                                  (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                       <*>_N
+                                       <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                       <GHC.Types.IO>_R
+                                       <()>_N))
+                               r1)
+                              `cast`
+                            (GHC.Types.N:IO[0] <()>_R)
+                              s of ds7 { (#,#) ipv ipv1 ->
+                       case m2 r1 ipv of ds8 { (#,#) ipv2 ipv3 -> (# ipv2, lvl10 #) } })
+                        `cast`
+                      (Trans
+                           (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                            ->_R Sym (GHC.Types.N:IO[0]
+                                          <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                             (Types.ClientLogMap, Types.ClientPortMap,
+                                              Types.Conections)>_R))
+                           (Trans
+                                (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                          <*>_N
+                                          <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                          <GHC.Types.IO>_R
+                                          <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                             (Types.ClientLogMap, Types.ClientPortMap,
+                                              Types.Conections)>_N))
+                                (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                                                                                  (Types.ClientLogMap,
+                                                                                                   Types.ClientPortMap,
+                                                                                                   Types.Conections)>_N)))
+                   Data.Map.Base.Tip
+                   -> let {
+                        x :: (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                          {- Strictness: m -}
+                        = (ww, ww1, ww2)
+                      } in
+                      let {
+                        lvl10 :: Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                   (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                        = Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessContinue
+                            @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                            x
+                      } in
+                      (\ (eta :: Control.Distributed.Process.Internal.Types.LocalProcess)
+                         (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                       (# eta1, lvl10 #))
+                        `cast`
+                      (Trans
+                           (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                            ->_R Sym (GHC.Types.N:IO[0]
+                                          <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                             (Types.ClientLogMap, Types.ClientPortMap,
+                                              Types.Conections)>_R))
+                           (Trans
+                                (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                          <*>_N
+                                          <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                          <GHC.Types.IO>_R
+                                          <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                             (Types.ClientLogMap, Types.ClientPortMap,
+                                              Types.Conections)>_N))
+                                (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                                                                                  (Types.ClientLogMap,
+                                                                                                   Types.ClientPortMap,
+                                                                                                   Types.Conections)>_N))) }) -}
+900275fb28cb960734e9d3ba3f704113
+  $wjoinChatHandler ::
+    Types.ClientLogMap
+    -> Types.ClientPortMap
+    -> Types.Conections
+    -> Types.NickName
+    -> Types.NickName
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Action
+         (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+  {- Arity: 5, Strictness: <S,U><L,U><L,U><L,U><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: Types.ClientLogMap)
+                   (ww1 :: Types.ClientPortMap)
+                   (ww2 :: Types.Conections)
+                   (ww3 :: Types.NickName)
+                   (ww4 :: Types.NickName) ->
+                 case Server.$slookup1 @ GHC.Types.Bool ww4 ww of wild {
+                   GHC.Base.Nothing
+                   -> let {
+                        m1 :: Control.Distributed.Process.Internal.Types.Process ()
+                        = Server.$wbroadcastMessage
+                            ww1
+                            Types.Server
+                            ww3
+                            Server.joinChatHandler_msg1
+                      } in
+                      let {
+                        x :: (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                          {- Strictness: m -}
+                        = (ww, ww1, ww2)
+                      } in
+                      let {
+                        lvl10 :: Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                   (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                        = Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessContinue
+                            @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                            x
+                      } in
+                      (\ (r1 :: Control.Distributed.Process.Internal.Types.LocalProcess)
+                         (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                       case Server.joinChatHandler2 r1 s of ds1 { (#,#) ipv ipv1 ->
+                       case (m1
+                               `cast`
+                             (Trans
+                                  (Control.Distributed.Process.Internal.Types.N:Process[0] <()>_N)
+                                  (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                       <*>_N
+                                       <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                       <GHC.Types.IO>_R
+                                       <()>_N))
+                               r1)
+                              `cast`
+                            (GHC.Types.N:IO[0] <()>_R)
+                              ipv of ds2 { (#,#) ipv2 ipv3 ->
+                       (# ipv2, lvl10 #) } })
+                        `cast`
+                      (Trans
+                           (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                            ->_R Sym (GHC.Types.N:IO[0]
+                                          <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                             (Types.ClientLogMap, Types.ClientPortMap,
+                                              Types.Conections)>_R))
+                           (Trans
+                                (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                          <*>_N
+                                          <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                          <GHC.Types.IO>_R
+                                          <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                             (Types.ClientLogMap, Types.ClientPortMap,
+                                              Types.Conections)>_N))
+                                (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                                                                                  (Types.ClientLogMap,
+                                                                                                   Types.ClientPortMap,
+                                                                                                   Types.Conections)>_N)))
+                   GHC.Base.Just ds
+                   -> case ds of wild1 {
+                        GHC.Types.False
+                        -> let {
+                             m1 :: Control.Distributed.Process.Internal.Types.Process ()
+                             = Server.$wbroadcastMessage
+                                 ww1
+                                 Types.Server
+                                 ww3
+                                 Server.joinChatHandler_msg
+                           } in
+                           let {
+                             x :: (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                               {- Strictness: m -}
+                             = (ww, ww1, ww2)
+                           } in
+                           let {
+                             lvl10 :: Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                        (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                             = Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessContinue
+                                 @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                                 x
+                           } in
+                           (\ (r1 :: Control.Distributed.Process.Internal.Types.LocalProcess)
+                              (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case Server.joinChatHandler1 r1 s of ds1 { (#,#) ipv ipv1 ->
+                            case (m1
+                                    `cast`
+                                  (Trans
+                                       (Control.Distributed.Process.Internal.Types.N:Process[0] <()>_N)
+                                       (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                            <GHC.Types.IO>_R
+                                            <()>_N))
+                                    r1)
+                                   `cast`
+                                 (GHC.Types.N:IO[0] <()>_R)
+                                   ipv of ds2 { (#,#) ipv2 ipv3 ->
+                            (# ipv2, lvl10 #) } })
+                             `cast`
+                           (Trans
+                                (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                 ->_R Sym (GHC.Types.N:IO[0]
+                                               <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                                  (Types.ClientLogMap, Types.ClientPortMap,
+                                                   Types.Conections)>_R))
+                                (Trans
+                                     (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                               <*>_N
+                                               <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                               <GHC.Types.IO>_R
+                                               <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                                  (Types.ClientLogMap, Types.ClientPortMap,
+                                                   Types.Conections)>_N))
+                                     (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                                                                                       (Types.ClientLogMap,
+                                                                                                        Types.ClientPortMap,
+                                                                                                        Types.Conections)>_N)))
+                        GHC.Types.True
+                        -> let {
+                             msg :: [GHC.Types.Char]
+                             = GHC.Base.++
+                                 @ GHC.Types.Char
+                                 ww3
+                                 (GHC.CString.unpackAppendCString# " iniciou um chat com "# ww4)
+                           } in
+                           let {
+                             m1 :: Control.Distributed.Process.Internal.Types.LocalProcess
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                             = Control.Distributed.Process.Internal.Primitives.nsend2
+                                 @ GHC.Base.String
+                                 Logger.$s$fSerializablea
+                                 Logger.logChatMessage2
+                                 msg
+                           } in
+                           let {
+                             m2 :: Control.Distributed.Process.Internal.Types.Process ()
+                             = Server.$wbroadcastMessage ww1 Types.Server ww3 msg
+                           } in
+                           let {
+                             x :: Data.Map.Base.Map Types.NickName [GHC.Types.Char]
+                             = Server.$sinsert_$sgo10
+                                 @ [GHC.Types.Char]
+                                 ww4
+                                 ww3
+                                 (Server.$sinsert_$sgo10 @ [GHC.Types.Char] ww3 ww4 ww2)
+                           } in
+                           let {
+                             x1 :: (Types.ClientLogMap, Types.ClientPortMap,
+                                    Data.Map.Base.Map Types.NickName Types.NickName)
+                               {- Strictness: m -}
+                             = (ww, ww1, x)
+                           } in
+                           let {
+                             lvl10 :: Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                        (Types.ClientLogMap, Types.ClientPortMap,
+                                         Data.Map.Base.Map Types.NickName Types.NickName)
+                             = Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessContinue
+                                 @ (Types.ClientLogMap, Types.ClientPortMap,
+                                    Data.Map.Base.Map Types.NickName Types.NickName)
+                                 x1
+                           } in
+                           (\ (r1 :: Control.Distributed.Process.Internal.Types.LocalProcess)
+                              (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case m1 r1 s of ds1 { (#,#) ipv ipv1 ->
+                            case (m2
+                                    `cast`
+                                  (Trans
+                                       (Control.Distributed.Process.Internal.Types.N:Process[0] <()>_N)
+                                       (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                            <GHC.Types.IO>_R
+                                            <()>_N))
+                                    r1)
+                                   `cast`
+                                 (GHC.Types.N:IO[0] <()>_R)
+                                   ipv of ds2 { (#,#) ipv2 ipv3 ->
+                            (# ipv2, lvl10 #) } })
+                             `cast`
+                           (Trans
+                                (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                 ->_R Sym (GHC.Types.N:IO[0]
+                                               <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                                  (Types.ClientLogMap, Types.ClientPortMap,
+                                                   Types.Conections)>_R))
+                                (Trans
+                                     (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                               <*>_N
+                                               <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                               <GHC.Types.IO>_R
+                                               <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                                  (Types.ClientLogMap, Types.ClientPortMap,
+                                                   Types.Conections)>_N))
+                                     (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                                                                                       (Types.ClientLogMap,
+                                                                                                        Types.ClientPortMap,
+                                                                                                        Types.Conections)>_N))) } }) -}
+93517b4dd504fe70376884ef095607e6
+  $wloggedHandler ::
+    Types.ClientLogMap
+    -> Types.ClientPortMap
+    -> Types.Conections
+    -> Types.NickName
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Action
+         (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: Types.ClientLogMap)
+                   (ww1 :: Types.ClientPortMap)
+                   (ww2 :: Types.Conections)
+                   (ww3 :: Types.NickName) ->
+                 let {
+                   m1 :: Control.Distributed.Process.Internal.Types.Process ()
+                   = Server.$wbroadcastMessage
+                       ww1
+                       Types.Server
+                       ww3
+                       (Server.onlineUsersMessage ww ww3)
+                 } in
+                 let {
+                   x :: (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                     {- Strictness: m -}
+                   = (ww, ww1, ww2)
+                 } in
+                 let {
+                   lvl10 :: Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                              (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                   = Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessContinue
+                       @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                       x
+                 } in
+                 (\ (r1 :: Control.Distributed.Process.Internal.Types.LocalProcess)
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case (m1
+                          `cast`
+                        (Trans
+                             (Control.Distributed.Process.Internal.Types.N:Process[0] <()>_N)
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                  <GHC.Types.IO>_R
+                                  <()>_N))
+                          r1)
+                         `cast`
+                       (GHC.Types.N:IO[0] <()>_R)
+                         s of ds1 { (#,#) ipv ipv1 ->
+                  (# ipv, lvl10 #) })
+                   `cast`
+                 (Trans
+                      (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                        (Types.ClientLogMap, Types.ClientPortMap,
+                                         Types.Conections)>_R))
+                      (Trans
+                           (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                     <*>_N
+                                     <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                     <GHC.Types.IO>_R
+                                     <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                        (Types.ClientLogMap, Types.ClientPortMap,
+                                         Types.Conections)>_N))
+                           (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                                                                             (Types.ClientLogMap,
+                                                                                              Types.ClientPortMap,
+                                                                                              Types.Conections)>_N)))) -}
+f364cc9e384eb15c67e235c62a9f8670
+  $wmessageHandler ::
+    Types.ClientLogMap
+    -> Types.ClientPortMap
+    -> Types.Conections
+    -> Types.ChatMessage
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Action
+         (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><L,U(U,U,U)>, Inline: [0],
+     Unfolding: (\ (ww :: Types.ClientLogMap)
+                   (ww1 :: Types.ClientPortMap)
+                   (ww2 :: Types.Conections)
+                   (w :: Types.ChatMessage) ->
+                 let {
+                   m1 :: Control.Distributed.Process.Internal.Types.Process ()
+                   = case w of ww3 { Types.ChatMessage ww4 ww5 ww6 ->
+                     Server.$wbroadcastMessage ww1 ww4 ww5 ww6 }
+                 } in
+                 let {
+                   x :: (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                     {- Strictness: m -}
+                   = (ww, ww1, ww2)
+                 } in
+                 let {
+                   lvl10 :: Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                              (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                   = Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessContinue
+                       @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                       x
+                 } in
+                 (\ (r1 :: Control.Distributed.Process.Internal.Types.LocalProcess)
+                    (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                  case (m1
+                          `cast`
+                        (Trans
+                             (Control.Distributed.Process.Internal.Types.N:Process[0] <()>_N)
+                             (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N
+                                  <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                  <GHC.Types.IO>_R
+                                  <()>_N))
+                          r1)
+                         `cast`
+                       (GHC.Types.N:IO[0] <()>_R)
+                         s of ds1 { (#,#) ipv ipv1 ->
+                  (# ipv, lvl10 #) })
+                   `cast`
+                 (Trans
+                      (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                       ->_R Sym (GHC.Types.N:IO[0]
+                                     <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                        (Types.ClientLogMap, Types.ClientPortMap,
+                                         Types.Conections)>_R))
+                      (Trans
+                           (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                     <*>_N
+                                     <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                     <GHC.Types.IO>_R
+                                     <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                        (Types.ClientLogMap, Types.ClientPortMap,
+                                         Types.Conections)>_N))
+                           (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                                                                             (Types.ClientLogMap,
+                                                                                              Types.ClientPortMap,
+                                                                                              Types.Conections)>_N)))) -}
+f022618ffb79ca85ee0c45b00ddd452b
+  $wsignUpHandler ::
+    Control.Distributed.Process.Internal.Types.SendPort
+      Types.ChatMessage
+    -> Types.ClientLogMap
+    -> Types.ClientPortMap
+    -> Types.Conections
+    -> Types.NickName
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Action
+         (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+  {- Arity: 5, Strictness: <L,U(U,U,U,U)><L,1*U><S,U><L,U><S,U>,
+     Inline: [0] -}
+a3e6e42affbd62a2e7d6f4725d61594a
+  broadcastMessage ::
+    Types.ClientPortMap
+    -> Types.ChatMessage
+    -> Control.Distributed.Process.Internal.Types.Process ()
+  {- Arity: 2, Strictness: <S,1*U><S,U(U,U,U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Types.ClientPortMap) (w1 :: Types.ChatMessage) ->
+                 case w1 of ww { Types.ChatMessage ww1 ww2 ww3 ->
+                 Server.$wbroadcastMessage w ww1 ww2 ww3 }) -}
+4e54a6dc5120839b6d84bed85a795c02
+  broadcastMessage1 ::
+    Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (eta1 :: Control.Distributed.Process.Internal.Types.LocalProcess)
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# eta2, GHC.Tuple.() #)) -}
+d2958f7556c48baa9c2c5b589cb0427f
+  disconnectHandler ::
+    Control.Distributed.Process.ManagedProcess.Internal.Types.ActionHandler
+      (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+      Control.Distributed.Process.Internal.Types.PortMonitorNotification
+  {- Arity: 2,
+     Strictness: <S(LSL),1*U(U,U,U)><S(LSL),1*U(A,U(U(U,U,U,U),U,U,U),A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: (Types.ClientLogMap, Types.ClientPortMap,
+                          Types.Conections))
+                   (w1 :: Control.Distributed.Process.Internal.Types.PortMonitorNotification) ->
+                 case w of ww { (,,) ww1 ww2 ww3 ->
+                 case w1 of ww4 { Control.Distributed.Process.Internal.Types.PortMonitorNotification ww5 ww6 ww7 ->
+                 case ww6 of ww8 { Control.Distributed.Process.Internal.Types.SendPortId ww9 ww10 ww11 ww12 ->
+                 Server.$wdisconnectHandler ww1 ww2 ww3 ww9 ww10 ww11 ww12 } } }) -}
+dfeae7db583e8db7fb64d84cd59dfd4b
+  disconnectHandler1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# " deslogou ..."#) -}
+aa6776e74853b0576694a43a0bc0a395
+  disconnectHandler2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "$"#) -}
+253ff751281c5f033e7dedd59e8bb02d
+  disconnectHandler_go10 ::
+    [GHC.Types.Char]
+    -> Data.Map.Base.Map
+         [GHC.Types.Char]
+         (Control.Distributed.Process.Internal.Types.SendPort
+            Types.ChatMessage)
+    -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><S,1*U> -}
+cab9e513a7567a808cb852ecf370e342
+  filtering ::
+    Types.ClientPortMap -> Types.ChatMessage -> Types.ClientPortMap
+  {- Arity: 2, Strictness: <S,1*U><S,1*U(A,U,A)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (clientPorts :: Types.ClientPortMap)
+                   (ds :: Types.ChatMessage) ->
+                 case ds of wild { Types.ChatMessage ds1 ds2 ds3 ->
+                 Data.Map.Base.filterWithKey
+                   @ Types.NickName
+                   @ (Control.Distributed.Process.Internal.Types.SendPort
+                        Types.ChatMessage)
+                   (\ (x :: Types.NickName)
+                      (ds4 :: Control.Distributed.Process.Internal.Types.SendPort
+                                Types.ChatMessage)[OneShot] ->
+                    GHC.Base.eqString x ds2)
+                   clientPorts }) -}
+f9e0b91cbbaad7d9f49b9b21df60f69c
+  helperLogUsers ::
+    [Types.NickName]
+    -> Types.ClientLogMap -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+a7151034d0dd69ba1f8bc325bec3d5cf
+  joinChatHandler ::
+    Control.Distributed.Process.ManagedProcess.Internal.Types.CastHandler
+      (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+      Types.JoinChatMessage
+  {- Arity: 2, Strictness: <S(SLL),1*U(U,U,U)><S(LS),1*U(U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: (Types.ClientLogMap, Types.ClientPortMap,
+                          Types.Conections))
+                   (w1 :: Types.JoinChatMessage) ->
+                 case w of ww { (,,) ww1 ww2 ww3 ->
+                 case w1 of ww4 { Types.JoinChatMessage ww5 ww6 ->
+                 Server.$wjoinChatHandler ww1 ww2 ww3 ww5 ww6 } }) -}
+a321c21ac18ebec9aad6969241efeea3
+  joinChatHandler1 ::
+    Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Unfolding: (Control.Distributed.Process.Internal.Primitives.nsend2
+                   @ GHC.Base.String
+                   Logger.$s$fSerializablea
+                   Logger.logChatMessage2
+                   Server.joinChatHandler_msg) -}
+a5362894caf152c869e6409149490640
+  joinChatHandler2 ::
+    Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Unfolding: (Control.Distributed.Process.Internal.Primitives.nsend2
+                   @ GHC.Base.String
+                   Logger.$s$fSerializablea
+                   Logger.logChatMessage2
+                   Server.joinChatHandler_msg1) -}
+c8f9e8af911b640fff7448e1d92d8ef2
+  joinChatHandler_msg :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "$error2$"#) -}
+5f3ea01c6d89bf88e8e1cbd252e306ea
+  joinChatHandler_msg1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "$error1$"#) -}
+e550196bd783d49cb0c1a73e6ccba61f
+  launchChatServer ::
+    Control.Distributed.Process.Internal.Types.Process
+      Control.Distributed.Process.Internal.Types.ProcessId
+  {- Arity: 2,
+     Unfolding: InlineRule (0, True, True)
+                Server.launchChatServer1
+                  `cast`
+                (Trans
+                     (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Control.Distributed.Process.Internal.Types.ProcessId>_R))
+                     (Trans
+                          (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                    <*>_N
+                                    <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                    <GHC.Types.IO>_R
+                                    <Control.Distributed.Process.Internal.Types.ProcessId>_N))
+                          (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <Control.Distributed.Process.Internal.Types.ProcessId>_N))) -}
+809a016667dbae34ecb2473df6464772
+  launchChatServer1 ::
+    Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Control.Distributed.Process.Internal.Types.ProcessId #)
+  {- Arity: 2,
+     Unfolding: (Control.Distributed.Process.spawnLocal1
+                   Server.launchChatServer2) -}
+b58ff0058f7fabeac7b527cc9568ceff
+  launchChatServer10 ::
+    Control.Distributed.Process.Internal.Types.Message
+    -> (Control.Distributed.Process.Internal.Types.PortMonitorNotification
+        -> GHC.Types.Bool)
+    -> (Control.Distributed.Process.Internal.Types.PortMonitorNotification
+        -> Control.Distributed.Process.Internal.Types.Process
+             (Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)))
+    -> Control.Distributed.Process.Internal.Types.Process
+         (GHC.Base.Maybe
+            (Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+               (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)))
+  {- Unfolding: (Control.Distributed.Process.Internal.Primitives.handleMessageIf
+                   @ Control.Distributed.Process.Internal.Types.Process
+                   @ Control.Distributed.Process.Internal.Types.PortMonitorNotification
+                   @ (Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                        (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+                   Control.Distributed.Process.Internal.Types.$fMonadProcess
+                   Server.$s$fSerializablea12) -}
+aaf63bd5827c9cd25ca9fd4f998aa25b
+  launchChatServer11 ::
+    [Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+       (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+                        (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+                   Server.launchChatServer24
+                   Server.launchChatServer12) -}
+655a1ce54512543d3e9b51e219f45377
+  launchChatServer12 ::
+    [Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+       (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+                        (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+                   Server.launchChatServer21
+                   Server.launchChatServer13) -}
+6a5eb6e26117d6460b09c4e0c16525f2
+  launchChatServer13 ::
+    [Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+       (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+                        (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+                   Server.launchChatServer18
+                   Server.launchChatServer14) -}
+f1a3b9800cb15661cee54cb7546bee36
+  launchChatServer14 ::
+    [Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+       (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+                        (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+                   Server.launchChatServer15
+                   (GHC.Types.[]
+                      @ (Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+                           (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)))) -}
+0eaf00038f8a02eba96861877d04c773
+  launchChatServer15 ::
+    Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+      (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+  {- Unfolding: (Control.Distributed.Process.ManagedProcess.Internal.Types.DispatchIf
+                   @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                   @ Types.LoggedMessage
+                   @ ()
+                   Server.$s$fSerializablea
+                   Control.Distributed.Process.ManagedProcess.Server.$s$fSerializablea
+                   Server.launchChatServer17
+                   Server.launchChatServer16) -}
+bbd7eddb89d1ee4a0f6754d0fb7ec2b8
+  launchChatServer16 ::
+    (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+         Types.LoggedMessage ()
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (st :: (Types.ClientLogMap, Types.ClientPortMap,
+                           Types.Conections))
+                   (msg :: Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+                             Types.LoggedMessage ()) ->
+                 case msg of wild {
+                   DEFAULT -> GHC.Types.False
+                   Control.Distributed.Process.ManagedProcess.Internal.Types.CastMessage ds
+                   -> GHC.Types.True }) -}
+c92f2312ef4972828d91a9c273b4a973
+  launchChatServer17 ::
+    (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+         Types.LoggedMessage ()
+    -> Control.Distributed.Process.Internal.Types.Process
+         (Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+            (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+  {- Arity: 2,
+     Unfolding: (\ (s1 :: (Types.ClientLogMap, Types.ClientPortMap,
+                           Types.Conections))
+                   (ds :: Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+                            Types.LoggedMessage ()) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Distributed.Process.ManagedProcess.Server.handleCastIf1
+                        @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                   Control.Distributed.Process.ManagedProcess.Internal.Types.CastMessage p
+                   -> Server.loggedHandler s1 p }) -}
+b1f4e7af7a845e5c74ee83f38148ff8c
+  launchChatServer18 ::
+    Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+      (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+  {- Unfolding: (Control.Distributed.Process.ManagedProcess.Internal.Types.DispatchIf
+                   @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                   @ Types.ChatMessage
+                   @ ()
+                   Server.$s$fSerializablea16
+                   Control.Distributed.Process.ManagedProcess.Server.$s$fSerializablea
+                   Server.launchChatServer20
+                   Server.launchChatServer19) -}
+a04383524aa608334e170bc5d9fda6ba
+  launchChatServer19 ::
+    (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+         Types.ChatMessage ()
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (st :: (Types.ClientLogMap, Types.ClientPortMap,
+                           Types.Conections))
+                   (msg :: Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+                             Types.ChatMessage ()) ->
+                 case msg of wild {
+                   DEFAULT -> GHC.Types.False
+                   Control.Distributed.Process.ManagedProcess.Internal.Types.CastMessage ds
+                   -> GHC.Types.True }) -}
+1605c67f9306c0b4ff233b9b24308820
+  launchChatServer2 ::
+    Control.Distributed.Process.Internal.Types.Process ()
+  {- Unfolding: (Control.Distributed.Process.ManagedProcess.runProcess
+                   @ (Data.Map.Base.Map Types.NickName GHC.Types.Bool,
+                      Data.Map.Base.Map
+                        Types.NickName
+                        (Control.Distributed.Process.Internal.Types.SendPort
+                           Types.ChatMessage),
+                      Data.Map.Base.Map Types.NickName Types.NickName)
+                   @ ()
+                   Server.launchChatServer5
+                   GHC.Tuple.()
+                   Server.launchChatServer3
+                     `cast`
+                   (<()>_R
+                    ->_R Trans
+                             (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Control.Distributed.Process.ManagedProcess.Internal.Types.InitResult
+                                               (Data.Map.Base.Map Types.NickName GHC.Types.Bool,
+                                                Data.Map.Base.Map
+                                                  Types.NickName
+                                                  (Control.Distributed.Process.Internal.Types.SendPort
+                                                     Types.ChatMessage),
+                                                Data.Map.Base.Map
+                                                  Types.NickName Types.NickName)>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                            <GHC.Types.IO>_R
+                                            <Control.Distributed.Process.ManagedProcess.Internal.Types.InitResult
+                                               (Data.Map.Base.Map Types.NickName GHC.Types.Bool,
+                                                Data.Map.Base.Map
+                                                  Types.NickName
+                                                  (Control.Distributed.Process.Internal.Types.SendPort
+                                                     Types.ChatMessage),
+                                                Data.Map.Base.Map
+                                                  Types.NickName Types.NickName)>_N))
+                                  (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <Control.Distributed.Process.ManagedProcess.Internal.Types.InitResult
+                                                                                                    (Data.Map.Base.Map
+                                                                                                       Types.NickName
+                                                                                                       GHC.Types.Bool,
+                                                                                                     Data.Map.Base.Map
+                                                                                                       Types.NickName
+                                                                                                       (Control.Distributed.Process.Internal.Types.SendPort
+                                                                                                          Types.ChatMessage),
+                                                                                                     Data.Map.Base.Map
+                                                                                                       Types.NickName
+                                                                                                       Types.NickName)>_N)))) -}
+bc5ee65e4663a85a06273a36548a401b
+  launchChatServer20 ::
+    (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+         Types.ChatMessage ()
+    -> Control.Distributed.Process.Internal.Types.Process
+         (Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+            (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+  {- Arity: 2,
+     Unfolding: (\ (s1 :: (Types.ClientLogMap, Types.ClientPortMap,
+                           Types.Conections))
+                   (ds :: Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+                            Types.ChatMessage ()) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Distributed.Process.ManagedProcess.Server.handleCastIf1
+                        @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                   Control.Distributed.Process.ManagedProcess.Internal.Types.CastMessage p
+                   -> Server.messageHandler s1 p }) -}
+4d068d6892c83116dc7e0806381728dc
+  launchChatServer21 ::
+    Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+      (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+  {- Unfolding: (Control.Distributed.Process.ManagedProcess.Internal.Types.DispatchIf
+                   @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                   @ Types.SignUpMessage
+                   @ Types.ChatMessage
+                   Server.$s$fSerializablea4
+                   Server.$s$fSerializablea16
+                   Server.launchChatServer23
+                   Server.launchChatServer22) -}
+e1d0a8fa189d1332401ab9bc50ae72f9
+  launchChatServer22 ::
+    (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+         Types.SignUpMessage Types.ChatMessage
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (st :: (Types.ClientLogMap, Types.ClientPortMap,
+                           Types.Conections))
+                   (msg :: Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+                             Types.SignUpMessage Types.ChatMessage) ->
+                 case msg of wild {
+                   DEFAULT -> GHC.Types.False
+                   Control.Distributed.Process.ManagedProcess.Internal.Types.ChanMessage ds ds1
+                   -> GHC.Types.True }) -}
+3eb8ed9fd0b1a556989f7f8e5d3bde37
+  launchChatServer23 ::
+    (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+         Types.SignUpMessage Types.ChatMessage
+    -> Control.Distributed.Process.Internal.Types.Process
+         (Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+            (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+  {- Arity: 2,
+     Unfolding: (\ (s1 :: (Types.ClientLogMap, Types.ClientPortMap,
+                           Types.Conections))
+                   (ds :: Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+                            Types.SignUpMessage Types.ChatMessage) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Distributed.Process.ManagedProcess.Server.handleRpcChanIf1
+                        @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                   Control.Distributed.Process.ManagedProcess.Internal.Types.ChanMessage p c
+                   -> Server.signUpHandler c s1 p }) -}
+0a02afde5ebc9823cba841a072ca615c
+  launchChatServer24 ::
+    Control.Distributed.Process.ManagedProcess.Internal.Types.Dispatcher
+      (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+  {- Unfolding: (Control.Distributed.Process.ManagedProcess.Internal.Types.DispatchIf
+                   @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                   @ Types.JoinChatMessage
+                   @ ()
+                   Server.$s$fSerializablea8
+                   Control.Distributed.Process.ManagedProcess.Server.$s$fSerializablea
+                   Server.launchChatServer26
+                   Server.launchChatServer25) -}
+c6896eb862266c9c0c5065577bea7f6e
+  launchChatServer25 ::
+    (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+         Types.JoinChatMessage ()
+    -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Unfolding: (\ (st :: (Types.ClientLogMap, Types.ClientPortMap,
+                           Types.Conections))
+                   (msg :: Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+                             Types.JoinChatMessage ()) ->
+                 case msg of wild {
+                   DEFAULT -> GHC.Types.False
+                   Control.Distributed.Process.ManagedProcess.Internal.Types.CastMessage ds
+                   -> GHC.Types.True }) -}
+e230d830534b93ce5fef4ea45a576329
+  launchChatServer26 ::
+    (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+    -> Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+         Types.JoinChatMessage ()
+    -> Control.Distributed.Process.Internal.Types.Process
+         (Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+            (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+  {- Arity: 2,
+     Unfolding: (\ (s1 :: (Types.ClientLogMap, Types.ClientPortMap,
+                           Types.Conections))
+                   (ds :: Control.Distributed.Process.ManagedProcess.Internal.Types.Message
+                            Types.JoinChatMessage ()) ->
+                 case ds of wild {
+                   DEFAULT
+                   -> Control.Distributed.Process.ManagedProcess.Server.handleCastIf1
+                        @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                   Control.Distributed.Process.ManagedProcess.Internal.Types.CastMessage p
+                   -> Server.joinChatHandler s1 p }) -}
+1b86428fa2461cf20b450eba0c731d03
+  launchChatServer3 ::
+    ()
+    -> Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Control.Distributed.Process.ManagedProcess.Internal.Types.InitResult
+            (Data.Map.Base.Map Types.NickName GHC.Types.Bool,
+             Data.Map.Base.Map
+               Types.NickName
+               (Control.Distributed.Process.Internal.Types.SendPort
+                  Types.ChatMessage),
+             Data.Map.Base.Map Types.NickName Types.NickName) #)
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ (ds :: ())[OneShot]
+                   (eta :: Control.Distributed.Process.Internal.Types.LocalProcess)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# eta1, Server.launchChatServer_eta #)) -}
+9c0dc4ce0f2e8dc418e66d839ba91f1d
+  launchChatServer4 ::
+    (Data.Map.Base.Map Types.NickName GHC.Types.Bool,
+     Data.Map.Base.Map
+       Types.NickName
+       (Control.Distributed.Process.Internal.Types.SendPort
+          Types.ChatMessage),
+     Data.Map.Base.Map Types.NickName Types.NickName)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Data.Map.Base.Tip @ Types.NickName @ GHC.Types.Bool,
+                  Data.Map.Base.Tip
+                    @ Types.NickName
+                    @ (Control.Distributed.Process.Internal.Types.SendPort
+                         Types.ChatMessage),
+                  Data.Map.Base.Tip @ Types.NickName @ Types.NickName)) -}
+02e8389d5ad5c6847965075f2a93d6c8
+  launchChatServer5 ::
+    (Data.Map.Base.Map Types.NickName GHC.Types.Bool,
+     Data.Map.Base.Map
+       Types.NickName
+       (Control.Distributed.Process.Internal.Types.SendPort
+          Types.ChatMessage),
+     Data.Map.Base.Map Types.NickName Types.NickName)
+    -> Control.Distributed.Process.Extras.Time.Delay
+    -> Control.Distributed.Process.Internal.Types.Process
+         Control.Distributed.Process.Extras.Internal.Types.ExitReason
+  {- Arity: 2,
+     Unfolding: (Control.Distributed.Process.ManagedProcess.Internal.GenProcess.recvLoop
+                   @ (Data.Map.Base.Map Types.NickName GHC.Types.Bool,
+                      Data.Map.Base.Map
+                        Types.NickName
+                        (Control.Distributed.Process.Internal.Types.SendPort
+                           Types.ChatMessage),
+                      Data.Map.Base.Map Types.NickName Types.NickName)
+                   Server.launchChatServer6) -}
+9318eed33e740c69cd49695563f8fcd9
+  launchChatServer6 ::
+    Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessDefinition
+      (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+  {- Unfolding: (Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessDefinition
+                   @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                   Server.launchChatServer11
+                   Server.launchChatServer7
+                   (GHC.Types.[]
+                      @ (Control.Distributed.Process.ManagedProcess.Internal.Types.ExternDispatcher
+                           (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)))
+                   (GHC.Types.[]
+                      @ (Control.Distributed.Process.ManagedProcess.Internal.Types.ExitSignalDispatcher
+                           (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)))
+                   (Control.Distributed.Process.ManagedProcess.defaultProcess2
+                      @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+                     `cast`
+                   (<(Types.ClientLogMap, Types.ClientPortMap, Types.Conections)>_R
+                    ->_R <Control.Distributed.Process.Extras.Time.Delay>_R
+                    ->_R Trans
+                             (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                              ->_R Sym (GHC.Types.N:IO[0]
+                                            <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                               (Types.ClientLogMap, Types.ClientPortMap,
+                                                Types.Conections)>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                            <GHC.Types.IO>_R
+                                            <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                               (Types.ClientLogMap, Types.ClientPortMap,
+                                                Types.Conections)>_N))
+                                  (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+                                                                                                    (Types.ClientLogMap,
+                                                                                                     Types.ClientPortMap,
+                                                                                                     Types.Conections)>_N)))
+                   (Control.Distributed.Process.ManagedProcess.defaultProcess1
+                      @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+                     `cast`
+                   (<Control.Distributed.Process.ManagedProcess.Internal.Types.ExitState
+                       (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)>_R
+                    ->_R <Control.Distributed.Process.Extras.Internal.Types.ExitReason>_R
+                    ->_R Trans
+                             (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                              ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                             (Trans
+                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                            <*>_N
+                                            <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                            <GHC.Types.IO>_R
+                                            <()>_N))
+                                  (Sym (Control.Distributed.Process.Internal.Types.N:Process[0]) <()>_N)))
+                   Control.Distributed.Process.ManagedProcess.Internal.Types.Log) -}
+6c08b808e4b63802a7baf3ab81ecce26
+  launchChatServer7 ::
+    [Control.Distributed.Process.ManagedProcess.Internal.Types.DeferredDispatcher
+       (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)]
+  {- Unfolding: (GHC.Types.:
+                   @ (Control.Distributed.Process.ManagedProcess.Internal.Types.DeferredDispatcher
+                        (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+                   Server.launchChatServer8
+                   (GHC.Types.[]
+                      @ (Control.Distributed.Process.ManagedProcess.Internal.Types.DeferredDispatcher
+                           (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)))) -}
+108a1db90be03299bcfc3471bf0b3025
+  launchChatServer8 ::
+    Control.Distributed.Process.ManagedProcess.Internal.Types.DeferredDispatcher
+      (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+  {- Unfolding: (Control.Distributed.Process.ManagedProcess.Internal.Types.DeferredDispatcher
+                   @ (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+                   Server.launchChatServer9) -}
+e270888443bf91e6f03bd20e5b1a6289
+  launchChatServer9 ::
+    (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+    -> Control.Distributed.Process.Internal.Types.Message
+    -> Control.Distributed.Process.Internal.Types.Process
+         (GHC.Base.Maybe
+            (Control.Distributed.Process.ManagedProcess.Internal.Types.ProcessAction
+               (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)))
+  {- Arity: 2,
+     Unfolding: (\ (s1 :: (Types.ClientLogMap, Types.ClientPortMap,
+                           Types.Conections))
+                   (msg :: Control.Distributed.Process.Internal.Types.Message) ->
+                 Server.launchChatServer10
+                   msg
+                   (Control.Distributed.Process.Internal.Primitives.expect2
+                      @ Control.Distributed.Process.Internal.Types.PortMonitorNotification)
+                   (Server.disconnectHandler s1)) -}
+6cff38f6afcbc501901ff54b5328bd90
+  launchChatServer_eta ::
+    Control.Distributed.Process.ManagedProcess.Internal.Types.InitResult
+      (Data.Map.Base.Map Types.NickName GHC.Types.Bool,
+       Data.Map.Base.Map
+         Types.NickName
+         (Control.Distributed.Process.Internal.Types.SendPort
+            Types.ChatMessage),
+       Data.Map.Base.Map Types.NickName Types.NickName)
+  {- HasNoCafRefs,
+     Unfolding: (Control.Distributed.Process.ManagedProcess.Internal.Types.InitOk
+                   @ (Data.Map.Base.Map Types.NickName GHC.Types.Bool,
+                      Data.Map.Base.Map
+                        Types.NickName
+                        (Control.Distributed.Process.Internal.Types.SendPort
+                           Types.ChatMessage),
+                      Data.Map.Base.Map Types.NickName Types.NickName)
+                   Server.launchChatServer4
+                   Control.Distributed.Process.Extras.Time.Infinity) -}
+e2f7de38cd1322ab95e12be0e8c124f1
+  loggedHandler ::
+    Control.Distributed.Process.ManagedProcess.Internal.Types.CastHandler
+      (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+      Types.LoggedMessage
+  {- Arity: 2, Strictness: <S,1*U(U,U,U)><S,1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: (Types.ClientLogMap, Types.ClientPortMap,
+                          Types.Conections))
+                   (w1 :: Types.LoggedMessage) ->
+                 case w of ww { (,,) ww1 ww2 ww3 ->
+                 case w1 of ww4 { Types.LoggedMessage ww5 ->
+                 Server.$wloggedHandler ww1 ww2 ww3 ww5 } }) -}
+acb805dab7b4603c6a288fc807b0fe06
+  messageHandler ::
+    Control.Distributed.Process.ManagedProcess.Internal.Types.CastHandler
+      (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+      Types.ChatMessage
+  {- Arity: 2, Strictness: <S,1*U(U,U,U)><L,U(U,U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: (Types.ClientLogMap, Types.ClientPortMap,
+                          Types.Conections))
+                   (w1 :: Types.ChatMessage) ->
+                 case w of ww { (,,) ww1 ww2 ww3 ->
+                 Server.$wmessageHandler ww1 ww2 ww3 w1 }) -}
+e98d9636ca3c164e35229f9181025966
+  onlineUsersMessage ::
+    Types.ClientLogMap -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,U><L,U>,
+     Unfolding: (\ (logClients :: Types.ClientLogMap)
+                   (from :: GHC.Base.String) ->
+                 letrec {
+                   go10 :: [[GHC.Types.Char]]
+                           -> Data.Map.Base.Map [GHC.Types.Char] GHC.Types.Bool
+                           -> [[GHC.Types.Char]]
+                     {- Arity: 2, Strictness: <L,1*U><S,1*U> -}
+                   = \ (z' :: [[GHC.Types.Char]])
+                       (ds :: Data.Map.Base.Map [GHC.Types.Char] GHC.Types.Bool) ->
+                     case ds of wild {
+                       Data.Map.Base.Bin dt kx x l r
+                       -> go10
+                            (case GHC.Classes.$fEq[]_$s$c==1 kx from of wild1 {
+                               GHC.Types.False -> GHC.Types.: @ [GHC.Types.Char] kx (go10 z' r)
+                               GHC.Types.True -> go10 z' r })
+                            l
+                       Data.Map.Base.Tip -> z' }
+                 } in
+                 let {
+                   users :: [GHC.Base.String]
+                   = go10 (GHC.Types.[] @ [GHC.Types.Char]) logClients
+                 } in
+                 case GHC.List.$wlenAcc @ [GHC.Types.Char] users 0# of ww2 {
+                   DEFAULT
+                   -> Server.helperLogUsers
+                        users
+                        logClients
+                        (GHC.Types.[] @ GHC.Types.Char)
+                   0# -> Server.onlineUsersMessage1 }) -}
+191e6b3d85ca3512672dbbb0b0cf64ca
+  onlineUsersMessage1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCStringUtf8#
+                   "N\\195\\163o h\\195\\161 outros usu\\195\\161rios no sistema ..."#) -}
+87a0fc085d7b8d1fb3bfc48464232e4d
+  serveChatRoom ::
+    Types.Host -> GHC.Types.Int -> Types.ChatName -> GHC.Types.IO ()
+  {- Arity: 4, Strictness: <L,U><L,1*U(U)><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Server.serveChatRoom1
+                  `cast`
+                (<Types.Host>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <Types.ChatName>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+c1a056bfaa523b060ecd0da45f5c4a63
+  serveChatRoom1 ::
+    Types.Host
+    -> GHC.Types.Int
+    -> Types.ChatName
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, Strictness: <L,U><L,1*U(U)><L,U><S,U> -}
+0c5db0b2c6305d8404f2887c65b32df6
+  signUpHandler ::
+    Control.Distributed.Process.ManagedProcess.Internal.Types.ChannelHandler
+      (Types.ClientLogMap, Types.ClientPortMap, Types.Conections)
+      Types.SignUpMessage
+      Types.ChatMessage
+  {- Arity: 3,
+     Strictness: <L,U(U,U,U,U)><S(LSL),1*U(1*U,U,U)><S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: Control.Distributed.Process.Internal.Types.SendPort
+                           Types.ChatMessage)
+                   (w1 :: (Types.ClientLogMap, Types.ClientPortMap, Types.Conections))
+                   (w2 :: Types.SignUpMessage) ->
+                 case w1 of ww { (,,) ww1 ww2 ww3 ->
+                 case w2 of ww4 { Types.SignUpMessage ww5 ->
+                 Server.$wsignUpHandler w ww1 ww2 ww3 ww5 } }) -}
+"SPEC/Server $fSerializablea @ ChatMessage" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                             Types.ChatMessage)
+                                                            ($dBinary :: Data.Binary.Class.Binary
+                                                                           Types.ChatMessage)
+  Control.Distributed.Process.Serializable.$fSerializablea @ Types.ChatMessage
+                                                           $dBinary
+                                                           $dTypeable
+  = Server.$s$fSerializablea16
+"SPEC/Server $fSerializablea @ JoinChatMessage" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                                 Types.JoinChatMessage)
+                                                                ($dBinary :: Data.Binary.Class.Binary
+                                                                               Types.JoinChatMessage)
+  Control.Distributed.Process.Serializable.$fSerializablea @ Types.JoinChatMessage
+                                                           $dBinary
+                                                           $dTypeable
+  = Server.$s$fSerializablea8
+"SPEC/Server $fSerializablea @ LoggedMessage" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                               Types.LoggedMessage)
+                                                              ($dBinary :: Data.Binary.Class.Binary
+                                                                             Types.LoggedMessage)
+  Control.Distributed.Process.Serializable.$fSerializablea @ Types.LoggedMessage
+                                                           $dBinary
+                                                           $dTypeable
+  = Server.$s$fSerializablea
+"SPEC/Server $fSerializablea @ PortMonitorNotification" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                                         Control.Distributed.Process.Internal.Types.PortMonitorNotification)
+                                                                        ($dBinary :: Data.Binary.Class.Binary
+                                                                                       Control.Distributed.Process.Internal.Types.PortMonitorNotification)
+  Control.Distributed.Process.Serializable.$fSerializablea @ Control.Distributed.Process.Internal.Types.PortMonitorNotification
+                                                           $dBinary
+                                                           $dTypeable
+  = Server.$s$fSerializablea12
+"SPEC/Server $fSerializablea @ SignUpMessage" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                               Types.SignUpMessage)
+                                                              ($dBinary :: Data.Binary.Class.Binary
+                                                                             Types.SignUpMessage)
+  Control.Distributed.Process.Serializable.$fSerializablea @ Types.SignUpMessage
+                                                           $dBinary
+                                                           $dTypeable
+  = Server.$s$fSerializablea4
+"SPEC/Server $fSerializablea_$cp1Serializable @ ChatMessage" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                                              Types.ChatMessage)
+                                                                             ($dBinary :: Data.Binary.Class.Binary
+                                                                                            Types.ChatMessage)
+  Control.Distributed.Process.Serializable.$fSerializablea_$cp1Serializable @ Types.ChatMessage
+                                                                            $dBinary
+                                                                            $dTypeable
+  = Server.$s$fSerializablea_$s$fSerializablea_$cp1Serializable4
+"SPEC/Server $fSerializablea_$cp1Serializable @ JoinChatMessage" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                                                  Types.JoinChatMessage)
+                                                                                 ($dBinary :: Data.Binary.Class.Binary
+                                                                                                Types.JoinChatMessage)
+  Control.Distributed.Process.Serializable.$fSerializablea_$cp1Serializable @ Types.JoinChatMessage
+                                                                            $dBinary
+                                                                            $dTypeable
+  = Server.$s$fSerializablea_$s$fSerializablea_$cp1Serializable2
+"SPEC/Server $fSerializablea_$cp1Serializable @ LoggedMessage" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                                                Types.LoggedMessage)
+                                                                               ($dBinary :: Data.Binary.Class.Binary
+                                                                                              Types.LoggedMessage)
+  Control.Distributed.Process.Serializable.$fSerializablea_$cp1Serializable @ Types.LoggedMessage
+                                                                            $dBinary
+                                                                            $dTypeable
+  = Server.$s$fSerializablea_$s$fSerializablea_$cp1Serializable
+"SPEC/Server $fSerializablea_$cp1Serializable @ PortMonitorNotification" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                                                          Control.Distributed.Process.Internal.Types.PortMonitorNotification)
+                                                                                         ($dBinary :: Data.Binary.Class.Binary
+                                                                                                        Control.Distributed.Process.Internal.Types.PortMonitorNotification)
+  Control.Distributed.Process.Serializable.$fSerializablea_$cp1Serializable @ Control.Distributed.Process.Internal.Types.PortMonitorNotification
+                                                                            $dBinary
+                                                                            $dTypeable
+  = Server.$s$fSerializablea_$s$fSerializablea_$cp1Serializable3
+"SPEC/Server $fSerializablea_$cp1Serializable @ SignUpMessage" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                                                Types.SignUpMessage)
+                                                                               ($dBinary :: Data.Binary.Class.Binary
+                                                                                              Types.SignUpMessage)
+  Control.Distributed.Process.Serializable.$fSerializablea_$cp1Serializable @ Types.SignUpMessage
+                                                                            $dBinary
+                                                                            $dTypeable
+  = Server.$s$fSerializablea_$s$fSerializablea_$cp1Serializable1
+"SPEC/Server $fSerializablea_$cp2Serializable @ ChatMessage" [ALWAYS] forall ($dTypeable :: Data.Typeable.Internal.Typeable
+                                                                                              Types.ChatMessage)
+                                                                             ($dBinary :: Data.Binary.Class.Binary
+                                                                                            Types.ChatMessage)
+  Control.Distributed.Process.Serializable.$fSerializablea_$cp2Serializable @ Types.ChatMessage
+                                                                            $dBinary
+                                                                            $dTypeable
+  = Server.$s$fSerializablea_$s$fSerializablea_$cp2Serializable
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
