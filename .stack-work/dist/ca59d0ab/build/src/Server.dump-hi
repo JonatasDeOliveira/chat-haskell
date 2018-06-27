@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-26 22:34:00.8132072 UTC
+2018-06-27 11:44:12.3380344 UTC
 
 interface chatServer-0.1.0.0-F55iXHiCgeG4OgnGdEtvot:Server 8002
-  interface hash: 16e18d90a82a485e36d723a62e945a16
+  interface hash: 707bd2be4d542ecbde504fae78788a3a
   ABI hash: c342ee93a57a7e9b51e7af9bcba0feb4
   export-list hash: 3089dabed5ff355a9cabbbf4be25b50f
   orphan hash: 6cf21c1e8e70e6f839709efdedb69325
@@ -152,6 +152,7 @@ import  -/  distributed-process-client-server-0.2.3@distributed-process-client-s
 import  -/  distributed-process-extras-0.3.2@distributed-process-extras-0.3.2-5jNxThiGiIV2xcFzHHpfhd:Control.Distributed.Process.Extras.Time d74c0ac092da28cfe7894443ec3d9135
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network.Socket.Internal 8ddd08415e264edcd03ad47a04f53d8d
 import  -/  network-transport-tcp-0.5.1@network-transport-tcp-0.5.1-KxA3ZXM3OkH9TM1p5uD4a1:Network.Transport.TCP 1b44fe4e045760424eb6d98c99498d3e
 7ceaf0828e420f08dde08829012d2bee
   $s$fSerializablea ::

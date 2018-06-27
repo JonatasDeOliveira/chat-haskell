@@ -1,9 +1,9 @@
 
 ==================== FINAL INTERFACE ====================
-2018-06-26 22:34:01.3976876 UTC
+2018-06-27 11:44:12.9165441 UTC
 
 interface chatServer-0.1.0.0-F55iXHiCgeG4OgnGdEtvot:Client 8002
-  interface hash: f78ccc635622089ef0281dfe46184a36
+  interface hash: 0e8fbdc465f5f25bcf93b765dc395579
   ABI hash: a908adf1c27acd63fcca6e1fa71d0a9f
   export-list hash: 0b4bb28e11f09d27ffaf81dca4c9aba6
   orphan hash: b726cd72271d33742f99e2e00a54f671
@@ -132,6 +132,7 @@ import  -/  distributed-process-0.6.6@distributed-process-0.6.6-K6pRsS4mPvR6u7mC
 import  -/  distributed-process-client-server-0.2.3@distributed-process-client-server-0.2.3-8kxGpVvO3U0Il499I2gK12:Control.Distributed.Process.ManagedProcess.Client 8cb7fad85334290bdabc7f5ab6e0a603
 import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
 import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  network-2.6.3.2@network-2.6.3.2-F0OcsS89osODGCGHNf1FTk:Network.Socket.Internal 8ddd08415e264edcd03ad47a04f53d8d
 import  -/  network-transport-0.4.4.0@network-transport-0.4.4.0-IJ9khvHtxql3hPMwfJGWeP:Network.Transport 55d339370d5225f1d14d88e77c80352b
 import  -/  network-transport-tcp-0.5.1@network-transport-tcp-0.5.1-KxA3ZXM3OkH9TM1p5uD4a1:Network.Transport.TCP 1b44fe4e045760424eb6d98c99498d3e
 import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Class 953c05e2bceca1b256a90a052f7c1b62

@@ -30,6 +30,7 @@ import Control.Distributed.Process.Node ( initRemoteTable
                                         , runProcess
                                         , newLocalNode )
 import Control.Concurrent (threadDelay)
+import Network.Socket.Internal (withSocketsDo)
 import Control.Monad.IO.Class (liftIO)
 import Control.Monad (forever, forM_, void)
 import Logger (runChatLogger, logStr)
@@ -38,7 +39,7 @@ import Types
 import Data.Maybe (fromMaybe)
 
 serveChatRoom :: Host -> Int -> ChatName -> IO ()
-serveChatRoom host port name = do
+serveChatRoom host port name = withSocketsDo $ do
   mt <- createTransport host (show port) defaultTCPParameters
   case mt of
     Right transport -> do

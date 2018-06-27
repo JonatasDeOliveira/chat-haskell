@@ -19,6 +19,7 @@ import Network.Transport.TCP (createTransport, defaultTCPParameters)
 import Network.Transport     (EndPointAddress(..))
 import Control.Concurrent (threadDelay)
 import Control.Monad.IO.Class (liftIO)
+import Network.Socket.Internal (withSocketsDo)
 import Control.Monad.Trans.Maybe
 import Control.Monad.Trans.Class
 import Control.Monad (void, forever)
@@ -39,7 +40,7 @@ searchChatServer name serverAddr = do
     _ -> searchChatServer name serverAddr
 
 launchChatClient :: ServerAddress -> Host -> Int -> ChatName -> IO ()
-launchChatClient serverAddr clientHost port name  = do
+launchChatClient serverAddr clientHost port name  = withSocketsDo $ do
   mt <- createTransport clientHost (show port) defaultTCPParameters
   case mt of
     Left err -> print err
